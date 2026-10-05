@@ -1,0 +1,1461 @@
+{
+  "source_field_count": 208,
+  "fields": [
+    {
+      "order": 1,
+      "field": "AAS",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 2,
+      "field": "ABCESO",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 3,
+      "field": "ACARBOSA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 4,
+      "field": "ACO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 5,
+      "field": "ACTP_PRIM",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 6,
+      "field": "ACTP_TCI",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 7,
+      "field": "ACXFA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 8,
+      "field": "ADE",
+      "filemaker_type": "N",
+      "length": 4,
+      "decimals": 1
+    },
+    {
+      "order": 9,
+      "field": "ADO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 10,
+      "field": "ALBUMINA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 11,
+      "field": "ALTA_T",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 12,
+      "field": "ANTAG_ALDO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 13,
+      "field": "ANTIARRITM",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 14,
+      "field": "APIXABAN",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 15,
+      "field": "ARA2",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 16,
+      "field": "AREA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 17,
+      "field": "ARRITMIA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 18,
+      "field": "ATB",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 19,
+      "field": "ATORVASTAT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 20,
+      "field": "BETABLOQ",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 21,
+      "field": "CALCIOANT",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 22,
+      "field": "CAMA",
+      "filemaker_type": "C",
+      "length": 6,
+      "decimals": 0
+    },
+    {
+      "order": 23,
+      "field": "CARDIOLOGO",
+      "filemaker_type": "C",
+      "length": 9,
+      "decimals": 0
+    },
+    {
+      "order": 24,
+      "field": "CARDIOLOGO1",
+      "filemaker_type": "C",
+      "length": 9,
+      "decimals": 0
+    },
+    {
+      "order": 25,
+      "field": "CAR_FAM",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 26,
+      "field": "CATE",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 27,
+      "field": "CCA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 28,
+      "field": "CENTRO",
+      "filemaker_type": "C",
+      "length": 26,
+      "decimals": 0
+    },
+    {
+      "order": 29,
+      "field": "CIR_CAR",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 30,
+      "field": "CLOPI",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 31,
+      "field": "CMBD1",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 32,
+      "field": "CMBD2",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 33,
+      "field": "CMBD3",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 34,
+      "field": "COMP_VASC",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 35,
+      "field": "CP",
+      "filemaker_type": "N",
+      "length": 5,
+      "decimals": 0
+    },
+    {
+      "order": 36,
+      "field": "CR",
+      "filemaker_type": "N",
+      "length": 6,
+      "decimals": 3
+    },
+    {
+      "order": 37,
+      "field": "CSIP",
+      "filemaker_type": "C",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 38,
+      "field": "CVE",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 39,
+      "field": "DABIGATRAN",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 40,
+      "field": "DESTINO_AL",
+      "filemaker_type": "C",
+      "length": 9,
+      "decimals": 0
+    },
+    {
+      "order": 41,
+      "field": "DIAG_ALTA",
+      "filemaker_type": "C",
+      "length": 254,
+      "decimals": 0
+    },
+    {
+      "order": 42,
+      "field": "DIAG_INGRE",
+      "filemaker_type": "C",
+      "length": 21,
+      "decimals": 0
+    },
+    {
+      "order": 43,
+      "field": "DIAS_ASIG",
+      "filemaker_type": "N",
+      "length": 4,
+      "decimals": 0
+    },
+    {
+      "order": 44,
+      "field": "DIURETICOS",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 45,
+      "field": "DL",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 46,
+      "field": "DM",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 47,
+      "field": "DOSIS",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 48,
+      "field": "DOSIS1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 49,
+      "field": "DOSIS2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 50,
+      "field": "DPP4",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 51,
+      "field": "DLAS",
+      "filemaker_type": "N",
+      "length": 4,
+      "decimals": 0
+    },
+    {
+      "order": 52,
+      "field": "ECO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 53,
+      "field": "ECOCARDIO",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 54,
+      "field": "ECV_PREVIA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 55,
+      "field": "EDAD",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 56,
+      "field": "EEF",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 57,
+      "field": "EMBOLIA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 58,
+      "field": "ENF_VALV_P",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 59,
+      "field": "ENTRESTO",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 60,
+      "field": "ERC",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 61,
+      "field": "ERGOMETRIA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 62,
+      "field": "ESTAT",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 63,
+      "field": "ETE",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 64,
+      "field": "EVOLUCION",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 65,
+      "field": "EVO_ACVHEM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 66,
+      "field": "EVO_ACVHEM1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 67,
+      "field": "EVO_ACVISQ",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 68,
+      "field": "EVO_ACVISQ1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 69,
+      "field": "EVO_AI",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 70,
+      "field": "EVO_AI_FEC",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 71,
+      "field": "EVO_AVC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 72,
+      "field": "EVO_AVC_FE",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 73,
+      "field": "EVO_CABG",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 74,
+      "field": "EVO_CABG_F",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 75,
+      "field": "EVO_EXITUS",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 76,
+      "field": "EVO_EXITUS1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 77,
+      "field": "EVO_IAM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 78,
+      "field": "EVO_IAM_FE",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 79,
+      "field": "EVO_IC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 80,
+      "field": "EVO_IC_FEC",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 81,
+      "field": "EVO_REINGR",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 82,
+      "field": "EVO_REINGR1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 83,
+      "field": "EVO_REINGR2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 84,
+      "field": "EVO_REINGR3",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 85,
+      "field": "EVO_REVSC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 86,
+      "field": "EVO_REVSC_",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 87,
+      "field": "EVO_SANG",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 88,
+      "field": "EVO_SANGFE",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 89,
+      "field": "EVO_SANG_G",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 90,
+      "field": "EVO_SANG_G1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 91,
+      "field": "EV_NACO",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 92,
+      "field": "EXFUMADOR",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 93,
+      "field": "EZE1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 94,
+      "field": "EZE2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 95,
+      "field": "EZETIM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 96,
+      "field": "FE",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 97,
+      "field": "FECHA_ALTA",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 98,
+      "field": "FECHA_INGR",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 99,
+      "field": "FECHA_ASIG",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 100,
+      "field": "FECHA_CCA",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 101,
+      "field": "FECHA_ECO",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 102,
+      "field": "FECH_LDL2",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 103,
+      "field": "FECH_LDL3",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 104,
+      "field": "FIRMADO_EC",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 105,
+      "field": "FISTULA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 106,
+      "field": "FUMADOR",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 107,
+      "field": "GERMEN",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 108,
+      "field": "GLINIDAS",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 109,
+      "field": "GLP1",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 110,
+      "field": "GLUC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 111,
+      "field": "GRUPO_DX",
+      "filemaker_type": "C",
+      "length": 21,
+      "decimals": 0
+    },
+    {
+      "order": 112,
+      "field": "HASBLED",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 113,
+      "field": "HB",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 114,
+      "field": "HB1AC",
+      "filemaker_type": "N",
+      "length": 4,
+      "decimals": 1
+    },
+    {
+      "order": 115,
+      "field": "HB1AC_2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 116,
+      "field": "HDL",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 117,
+      "field": "HDL2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 118,
+      "field": "HDL3",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 119,
+      "field": "HOLTER",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 120,
+      "field": "HTA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 121,
+      "field": "IAMSEST2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 122,
+      "field": "IAM_ANT40",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 123,
+      "field": "IC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 124,
+      "field": "IECA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 125,
+      "field": "INGRESO_PR",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 126,
+      "field": "INR_2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 127,
+      "field": "INR_3",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 128,
+      "field": "INR_TOTALE",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 129,
+      "field": "INSULINA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 130,
+      "field": "INTERESANT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 131,
+      "field": "IPCSK90",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 132,
+      "field": "IPCSK91",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 133,
+      "field": "IPCSK92",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 134,
+      "field": "IVABRADINA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 135,
+      "field": "IVR",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 136,
+      "field": "LDL",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 137,
+      "field": "LDL2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 138,
+      "field": "LDL3",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 139,
+      "field": "MCP",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 140,
+      "field": "MEDIANA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 141,
+      "field": "MEDIA_DIAS",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 142,
+      "field": "MEDIA_EDAD",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 143,
+      "field": "MET",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 144,
+      "field": "NA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 145,
+      "field": "NACOS",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 146,
+      "field": "NEGATIVO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 147,
+      "field": "NEURO",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 148,
+      "field": "NHC",
+      "filemaker_type": "N",
+      "length": 7,
+      "decimals": 0
+    },
+    {
+      "order": 149,
+      "field": "NITRITOS",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 150,
+      "field": "NOMBRE",
+      "filemaker_type": "C",
+      "length": 21,
+      "decimals": 0
+    },
+    {
+      "order": 151,
+      "field": "NUM_PAC",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 152,
+      "field": "OBESIDAD",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 153,
+      "field": "OBSERVACIO",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 154,
+      "field": "OBS_EVOL",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 155,
+      "field": "OTRA_EST",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 156,
+      "field": "PCR",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 157,
+      "field": "PERIIAM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 158,
+      "field": "PITAVASTAT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 159,
+      "field": "PORCENT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 160,
+      "field": "PRASUG",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 161,
+      "field": "PRIMER_EPI",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 162,
+      "field": "PROCEDENCI",
+      "filemaker_type": "C",
+      "length": 16,
+      "decimals": 0
+    },
+    {
+      "order": 163,
+      "field": "PROTOCOLO_",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 164,
+      "field": "RANOLAZINA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 165,
+      "field": "RIVAROXABA",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 166,
+      "field": "RMC",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 167,
+      "field": "ROSUVASTAT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 168,
+      "field": "SPECT",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 169,
+      "field": "STENT",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 170,
+      "field": "SU",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 171,
+      "field": "TC_CORON",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 172,
+      "field": "TICA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 173,
+      "field": "TIEMPO_3AT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 174,
+      "field": "TRATAMIENT",
+      "filemaker_type": "C",
+      "length": 254,
+      "decimals": 0
+    },
+    {
+      "order": 175,
+      "field": "TROMBO",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 176,
+      "field": "UCO",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 177,
+      "field": "VALVULA_AF",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 178,
+      "field": "VALV_MEC",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 179,
+      "field": "VARON",
+      "filemaker_type": "N",
+      "length": 3,
+      "decimals": 0
+    },
+    {
+      "order": 180,
+      "field": "VEG_TAM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 181,
+      "field": "VICENTE",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 182,
+      "field": "DOSIS0",
+      "filemaker_type": "C",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 183,
+      "field": "TAVI",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 184,
+      "field": "SATISFCCIO",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 185,
+      "field": "ADHERENCIA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 186,
+      "field": "ADE_2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 187,
+      "field": "FECHA_ADE_",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 188,
+      "field": "FECHA_A1C2",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 189,
+      "field": "ISLGT2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 190,
+      "field": "DOSIS_MAX_",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 191,
+      "field": "CR_2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 192,
+      "field": "BEMPE",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 193,
+      "field": "EZE",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 194,
+      "field": "TRIG",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 195,
+      "field": "VAZK",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 196,
+      "field": "PCSK9",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 197,
+      "field": "TG2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 198,
+      "field": "LPA",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 199,
+      "field": "OPTIMZ",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 200,
+      "field": "ENT_SEGUIM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 201,
+      "field": "ISLGT2_SEG",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 202,
+      "field": "BETA_SEGUI",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 203,
+      "field": "AMR_SEGUIM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 204,
+      "field": "CR2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 205,
+      "field": "K2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 206,
+      "field": "PAS2",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 207,
+      "field": "FECHA2",
+      "filemaker_type": "D",
+      "length": null,
+      "decimals": 0
+    },
+    {
+      "order": 208,
+      "field": "FASE2B",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    }
+  ]
+}

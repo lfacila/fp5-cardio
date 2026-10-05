@@ -1,0 +1,33 @@
+{
+  "retired_count": 4,
+  "fields": [
+    {
+      "order": 51,
+      "field": "DLAS",
+      "filemaker_type": "N",
+      "length": 4,
+      "decimals": 0
+    },
+    {
+      "order": 173,
+      "field": "TIEMPO_3AT",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 180,
+      "field": "VEG_TAM",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    },
+    {
+      "order": 190,
+      "field": "DOSIS_MAX_",
+      "filemaker_type": "N",
+      "length": 1,
+      "decimals": 0
+    }
+  ]
+}

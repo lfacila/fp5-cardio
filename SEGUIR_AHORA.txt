@@ -1,0 +1,17 @@
+FP5 CARDIO v0.6
+
+Qué ha cambiado:
+- El CSV de FileMaker sigue teniendo 208 columnas.
+- El modelo clínico activo usa 204.
+- Retiradas: DLAS, TIEMPO_3AT, VEG_TAM, DOSIS_MAX_.
+- El importador acepta el CSV de 208 columnas y descarta esos 4 campos antes de crear raw_data/validated_data.
+- Cada fila sigue siendo un episodio/ingreso; NHC agrupa varios episodios del mismo paciente.
+
+AHORA
+1) En Supabase ejecuta sql/schema.sql.
+2) Crea el repositorio GitHub con estos archivos, sin el CSV clínico.
+3) Despliega app.py en Streamlit Community Cloud.
+4) Introduce los Secrets directamente en Streamlit.
+5) Desde Administración sube el CSV FP5_14297.csv y pulsa primero AUDITAR.
+6) Comprueba que detecta 14.297 registros, 208 columnas de origen y 204 activas.
+7) No pulses Importar hasta revisar la auditoría.
