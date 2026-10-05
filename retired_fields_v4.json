@@ -1,0 +1,618 @@
+{
+  "version": "v4",
+  "retired_count": 102,
+  "fields": [
+    {
+      "field": "ABCESO",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ACARBOSA",
+      "prevalence_pct": 3.2245,
+      "nonempty": 461,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ACTP_TCI",
+      "prevalence_pct": 2.7348,
+      "nonempty": 391,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ALBUMINA",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ALTA_T",
+      "prevalence_pct": 0.0,
+      "nonempty": 0,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ARRITMIA",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ATB",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ATORVASTAT",
+      "prevalence_pct": 3.4763,
+      "nonempty": 497,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CAR_FAM",
+      "prevalence_pct": 2.553,
+      "nonempty": 365,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CCA",
+      "prevalence_pct": 0.035,
+      "nonempty": 5,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CMBD1",
+      "prevalence_pct": 0.1259,
+      "nonempty": 18,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CMBD2",
+      "prevalence_pct": 0.049,
+      "nonempty": 7,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CMBD3",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DOSIS",
+      "prevalence_pct": 3.3993,
+      "nonempty": 486,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DOSIS1",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DOSIS2",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DPP4",
+      "prevalence_pct": 2.7348,
+      "nonempty": 391,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DLAS",
+      "prevalence_pct": 99.979,
+      "nonempty": 14294,
+      "reason": "previously_retired_by_user"
+    },
+    {
+      "field": "ECOCARDIO",
+      "prevalence_pct": 2.9027,
+      "nonempty": 415,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EMBOLIA",
+      "prevalence_pct": 0.028,
+      "nonempty": 4,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ENF_VALV_P",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVOLUCION",
+      "prevalence_pct": 3.6791,
+      "nonempty": 526,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVO_ACVHEM",
+      "prevalence_pct": 6.1481,
+      "nonempty": 879,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVO_ACVHEM1",
+      "prevalence_pct": 6.1272,
+      "nonempty": 876,
+      "reason": "paired_date_without_active_parent"
+    },
+    {
+      "field": "EVO_ACVISQ",
+      "prevalence_pct": 6.1272,
+      "nonempty": 876,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVO_ACVISQ1",
+      "prevalence_pct": 6.1202,
+      "nonempty": 875,
+      "reason": "paired_date_without_active_parent"
+    },
+    {
+      "field": "EVO_SANG",
+      "prevalence_pct": 6.0922,
+      "nonempty": 871,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVO_SANGFE",
+      "prevalence_pct": 6.0852,
+      "nonempty": 870,
+      "reason": "paired_date_without_active_parent"
+    },
+    {
+      "field": "EVO_SANG_G",
+      "prevalence_pct": 6.0852,
+      "nonempty": 870,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EVO_SANG_G1",
+      "prevalence_pct": 6.0852,
+      "nonempty": 870,
+      "reason": "paired_date_without_active_parent"
+    },
+    {
+      "field": "EV_NACO",
+      "prevalence_pct": 0.7694,
+      "nonempty": 110,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EZE1",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EZE2",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "EZETIM",
+      "prevalence_pct": 4.0638,
+      "nonempty": 581,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECHA_CCA",
+      "prevalence_pct": 0.007,
+      "nonempty": 1,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECHA_ECO",
+      "prevalence_pct": 2.9237,
+      "nonempty": 418,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECH_LDL2",
+      "prevalence_pct": 0.4686,
+      "nonempty": 67,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECH_LDL3",
+      "prevalence_pct": 0.1119,
+      "nonempty": 16,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FIRMADO_EC",
+      "prevalence_pct": 2.8468,
+      "nonempty": 407,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FISTULA",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "GERMEN",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "GLINIDAS",
+      "prevalence_pct": 2.3012,
+      "nonempty": 329,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "GLP1",
+      "prevalence_pct": 2.0354,
+      "nonempty": 291,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "HASBLED",
+      "prevalence_pct": 0.7834,
+      "nonempty": 112,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "HB1AC_2",
+      "prevalence_pct": 7.1623,
+      "nonempty": 1024,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "HDL2",
+      "prevalence_pct": 1.8955,
+      "nonempty": 271,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "HDL3",
+      "prevalence_pct": 0.1119,
+      "nonempty": 16,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "IC",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "INR_2",
+      "prevalence_pct": 2.3222,
+      "nonempty": 332,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "INR_3",
+      "prevalence_pct": 2.3082,
+      "nonempty": 330,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "INR_TOTALE",
+      "prevalence_pct": 2.3711,
+      "nonempty": 339,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "INTERESANT",
+      "prevalence_pct": 0.9932,
+      "nonempty": 142,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "IPCSK90",
+      "prevalence_pct": 0.8883,
+      "nonempty": 127,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "IPCSK91",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "IPCSK92",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "IVR",
+      "prevalence_pct": 4.2387,
+      "nonempty": 606,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "LDL2",
+      "prevalence_pct": 2.6229,
+      "nonempty": 375,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "LDL3",
+      "prevalence_pct": 0.8603,
+      "nonempty": 123,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "MEDIANA",
+      "prevalence_pct": 100.0,
+      "nonempty": 14297,
+      "reason": "legacy_or_constant_field"
+    },
+    {
+      "field": "MEDIA_DIAS",
+      "prevalence_pct": 100.0,
+      "nonempty": 14297,
+      "reason": "legacy_or_constant_field"
+    },
+    {
+      "field": "MEDIA_EDAD",
+      "prevalence_pct": 100.0,
+      "nonempty": 14297,
+      "reason": "legacy_or_constant_field"
+    },
+    {
+      "field": "MET",
+      "prevalence_pct": 2.9796,
+      "nonempty": 426,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "NEGATIVO",
+      "prevalence_pct": 2.588,
+      "nonempty": 370,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "NEURO",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "NUM_PAC",
+      "prevalence_pct": 99.965,
+      "nonempty": 14292,
+      "reason": "legacy_or_constant_field"
+    },
+    {
+      "field": "OBSERVACIO",
+      "prevalence_pct": 0.5036,
+      "nonempty": 72,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "OBS_EVOL",
+      "prevalence_pct": 9.1698,
+      "nonempty": 1311,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "OTRA_EST",
+      "prevalence_pct": 3.3783,
+      "nonempty": 483,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PCR",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PERIIAM",
+      "prevalence_pct": 0.042,
+      "nonempty": 6,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PITAVASTAT",
+      "prevalence_pct": 3.3573,
+      "nonempty": 480,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PORCENT",
+      "prevalence_pct": 2.3292,
+      "nonempty": 333,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PRIMER_EPI",
+      "prevalence_pct": 0.021,
+      "nonempty": 3,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PROTOCOLO_",
+      "prevalence_pct": 0.5176,
+      "nonempty": 74,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ROSUVASTAT",
+      "prevalence_pct": 3.4343,
+      "nonempty": 491,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "SU",
+      "prevalence_pct": 2.0634,
+      "nonempty": 295,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "TIEMPO_3AT",
+      "prevalence_pct": 1.4199,
+      "nonempty": 203,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "TROMBO",
+      "prevalence_pct": 0.9512,
+      "nonempty": 136,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "VALVULA_AF",
+      "prevalence_pct": 0.028,
+      "nonempty": 4,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "VALV_MEC",
+      "prevalence_pct": 0.9303,
+      "nonempty": 133,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "VEG_TAM",
+      "prevalence_pct": 0.014,
+      "nonempty": 2,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "VICENTE",
+      "prevalence_pct": 1.3359,
+      "nonempty": 191,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DOSIS0",
+      "prevalence_pct": 0.7484,
+      "nonempty": 107,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "SATISFCCIO",
+      "prevalence_pct": 0.0,
+      "nonempty": 0,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ADHERENCIA",
+      "prevalence_pct": 0.0,
+      "nonempty": 0,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ADE_2",
+      "prevalence_pct": 1.3849,
+      "nonempty": 198,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECHA_ADE_",
+      "prevalence_pct": 1.4199,
+      "nonempty": 203,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECHA_A1C2",
+      "prevalence_pct": 0.035,
+      "nonempty": 5,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "DOSIS_MAX_",
+      "prevalence_pct": 0.0979,
+      "nonempty": 14,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CR_2",
+      "prevalence_pct": 1.4129,
+      "nonempty": 202,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "TG2",
+      "prevalence_pct": 1.4409,
+      "nonempty": 206,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "LPA",
+      "prevalence_pct": 0.2798,
+      "nonempty": 40,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "OPTIMZ",
+      "prevalence_pct": 0.4407,
+      "nonempty": 63,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ENT_SEGUIM",
+      "prevalence_pct": 0.3148,
+      "nonempty": 45,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "ISLGT2_SEG",
+      "prevalence_pct": 0.3148,
+      "nonempty": 45,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "BETA_SEGUI",
+      "prevalence_pct": 0.3148,
+      "nonempty": 45,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "AMR_SEGUIM",
+      "prevalence_pct": 0.3148,
+      "nonempty": 45,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "CR2",
+      "prevalence_pct": 0.2168,
+      "nonempty": 31,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "K2",
+      "prevalence_pct": 0.2168,
+      "nonempty": 31,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "PAS2",
+      "prevalence_pct": 0.1889,
+      "nonempty": 27,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FECHA2",
+      "prevalence_pct": 0.2168,
+      "nonempty": 31,
+      "reason": "prevalence_le_10pct"
+    },
+    {
+      "field": "FASE2B",
+      "prevalence_pct": 0.4407,
+      "nonempty": 63,
+      "reason": "prevalence_le_10pct"
+    }
+  ]
+}

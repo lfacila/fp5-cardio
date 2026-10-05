@@ -1,0 +1,1461 @@
+{
+  "rows": 14297,
+  "fields": {
+    "AAS": {
+      "nonempty": 12511,
+      "nonempty_pct": 87.5079,
+      "n_555": 975,
+      "n_zero": 4795,
+      "n_unique_nonempty": 4
+    },
+    "ABCESO": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 2
+    },
+    "ACARBOSA": {
+      "nonempty": 461,
+      "nonempty_pct": 3.2245,
+      "n_555": 0,
+      "n_zero": 230,
+      "n_unique_nonempty": 2
+    },
+    "ACO": {
+      "nonempty": 12471,
+      "nonempty_pct": 87.2281,
+      "n_555": 974,
+      "n_zero": 9737,
+      "n_unique_nonempty": 4
+    },
+    "ACTP_PRIM": {
+      "nonempty": 11565,
+      "nonempty_pct": 80.8911,
+      "n_555": 1,
+      "n_zero": 9889,
+      "n_unique_nonempty": 3
+    },
+    "ACTP_TCI": {
+      "nonempty": 391,
+      "nonempty_pct": 2.7348,
+      "n_555": 0,
+      "n_zero": 372,
+      "n_unique_nonempty": 2
+    },
+    "ACXFA": {
+      "nonempty": 12418,
+      "nonempty_pct": 86.8574,
+      "n_555": 3,
+      "n_zero": 8622,
+      "n_unique_nonempty": 8
+    },
+    "ADE": {
+      "nonempty": 12428,
+      "nonempty_pct": 86.9273,
+      "n_555": 23,
+      "n_zero": 0,
+      "n_unique_nonempty": 228
+    },
+    "ADO": {
+      "nonempty": 12488,
+      "nonempty_pct": 87.347,
+      "n_555": 966,
+      "n_zero": 7185,
+      "n_unique_nonempty": 4
+    },
+    "ALBUMINA": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "ALTA_T": {
+      "nonempty": 0,
+      "nonempty_pct": 0.0,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 0
+    },
+    "ANTAG_ALDO": {
+      "nonempty": 12472,
+      "nonempty_pct": 87.2351,
+      "n_555": 976,
+      "n_zero": 8677,
+      "n_unique_nonempty": 4
+    },
+    "ANTIARRITM": {
+      "nonempty": 12457,
+      "nonempty_pct": 87.1302,
+      "n_555": 976,
+      "n_zero": 9818,
+      "n_unique_nonempty": 4
+    },
+    "APIXABAN": {
+      "nonempty": 10529,
+      "nonempty_pct": 73.6448,
+      "n_555": 915,
+      "n_zero": 8993,
+      "n_unique_nonempty": 3
+    },
+    "ARA2": {
+      "nonempty": 12480,
+      "nonempty_pct": 87.291,
+      "n_555": 976,
+      "n_zero": 8067,
+      "n_unique_nonempty": 4
+    },
+    "AREA": {
+      "nonempty": 4087,
+      "nonempty_pct": 28.5864,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 17
+    },
+    "ARRITMIA": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 2
+    },
+    "ATB": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "ATORVASTAT": {
+      "nonempty": 497,
+      "nonempty_pct": 3.4763,
+      "n_555": 0,
+      "n_zero": 198,
+      "n_unique_nonempty": 6
+    },
+    "BETABLOQ": {
+      "nonempty": 12494,
+      "nonempty_pct": 87.389,
+      "n_555": 975,
+      "n_zero": 3401,
+      "n_unique_nonempty": 3
+    },
+    "CALCIOANT": {
+      "nonempty": 12478,
+      "nonempty_pct": 87.2771,
+      "n_555": 978,
+      "n_zero": 8890,
+      "n_unique_nonempty": 3
+    },
+    "CAMA": {
+      "nonempty": 14251,
+      "nonempty_pct": 99.6783,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 582
+    },
+    "CARDIOLOGO": {
+      "nonempty": 13219,
+      "nonempty_pct": 92.46,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 72
+    },
+    "CARDIOLOGO1": {
+      "nonempty": 14245,
+      "nonempty_pct": 99.6363,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 40
+    },
+    "CAR_FAM": {
+      "nonempty": 365,
+      "nonempty_pct": 2.553,
+      "n_555": 0,
+      "n_zero": 362,
+      "n_unique_nonempty": 2
+    },
+    "CATE": {
+      "nonempty": 12607,
+      "nonempty_pct": 88.1793,
+      "n_555": 1,
+      "n_zero": 5265,
+      "n_unique_nonempty": 4
+    },
+    "CCA": {
+      "nonempty": 5,
+      "nonempty_pct": 0.035,
+      "n_555": 0,
+      "n_zero": 1,
+      "n_unique_nonempty": 2
+    },
+    "CENTRO": {
+      "nonempty": 4152,
+      "nonempty_pct": 29.0411,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 195
+    },
+    "CIR_CAR": {
+      "nonempty": 12547,
+      "nonempty_pct": 87.7597,
+      "n_555": 2,
+      "n_zero": 11944,
+      "n_unique_nonempty": 3
+    },
+    "CLOPI": {
+      "nonempty": 12494,
+      "nonempty_pct": 87.389,
+      "n_555": 975,
+      "n_zero": 8085,
+      "n_unique_nonempty": 3
+    },
+    "CMBD1": {
+      "nonempty": 18,
+      "nonempty_pct": 0.1259,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 8
+    },
+    "CMBD2": {
+      "nonempty": 7,
+      "nonempty_pct": 0.049,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 6
+    },
+    "CMBD3": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "COMP_VASC": {
+      "nonempty": 12163,
+      "nonempty_pct": 85.0738,
+      "n_555": 2,
+      "n_zero": 12072,
+      "n_unique_nonempty": 5
+    },
+    "CP": {
+      "nonempty": 4160,
+      "nonempty_pct": 29.097,
+      "n_555": 0,
+      "n_zero": 4,
+      "n_unique_nonempty": 155
+    },
+    "CR": {
+      "nonempty": 12534,
+      "nonempty_pct": 87.6687,
+      "n_555": 12,
+      "n_zero": 0,
+      "n_unique_nonempty": 580
+    },
+    "CSIP": {
+      "nonempty": 4152,
+      "nonempty_pct": 29.0411,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 195
+    },
+    "CVE": {
+      "nonempty": 12543,
+      "nonempty_pct": 87.7317,
+      "n_555": 2,
+      "n_zero": 11772,
+      "n_unique_nonempty": 4
+    },
+    "DABIGATRAN": {
+      "nonempty": 11729,
+      "nonempty_pct": 82.0382,
+      "n_555": 975,
+      "n_zero": 10489,
+      "n_unique_nonempty": 3
+    },
+    "DESTINO_AL": {
+      "nonempty": 13258,
+      "nonempty_pct": 92.7327,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 9
+    },
+    "DIAG_ALTA": {
+      "nonempty": 13228,
+      "nonempty_pct": 92.5229,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 13108
+    },
+    "DIAG_INGRE": {
+      "nonempty": 14230,
+      "nonempty_pct": 99.5314,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 5476
+    },
+    "DIAS_ASIG": {
+      "nonempty": 14243,
+      "nonempty_pct": 99.6223,
+      "n_555": 0,
+      "n_zero": 6,
+      "n_unique_nonempty": 3596
+    },
+    "DIURETICOS": {
+      "nonempty": 12485,
+      "nonempty_pct": 87.326,
+      "n_555": 978,
+      "n_zero": 5300,
+      "n_unique_nonempty": 3
+    },
+    "DL": {
+      "nonempty": 12616,
+      "nonempty_pct": 88.2423,
+      "n_555": 4,
+      "n_zero": 4535,
+      "n_unique_nonempty": 3
+    },
+    "DM": {
+      "nonempty": 12587,
+      "nonempty_pct": 88.0394,
+      "n_555": 4,
+      "n_zero": 7516,
+      "n_unique_nonempty": 5
+    },
+    "DOSIS": {
+      "nonempty": 486,
+      "nonempty_pct": 3.3993,
+      "n_555": 0,
+      "n_zero": 108,
+      "n_unique_nonempty": 8
+    },
+    "DOSIS1": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 6,
+      "n_unique_nonempty": 5
+    },
+    "DOSIS2": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 6,
+      "n_unique_nonempty": 5
+    },
+    "DPP4": {
+      "nonempty": 391,
+      "nonempty_pct": 2.7348,
+      "n_555": 0,
+      "n_zero": 266,
+      "n_unique_nonempty": 2
+    },
+    "DLAS": {
+      "nonempty": 14294,
+      "nonempty_pct": 99.979,
+      "n_555": 1,
+      "n_zero": 0,
+      "n_unique_nonempty": 5070
+    },
+    "ECO": {
+      "nonempty": 12661,
+      "nonempty_pct": 88.557,
+      "n_555": 1,
+      "n_zero": 982,
+      "n_unique_nonempty": 7
+    },
+    "ECOCARDIO": {
+      "nonempty": 415,
+      "nonempty_pct": 2.9027,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 410
+    },
+    "ECV_PREVIA": {
+      "nonempty": 12588,
+      "nonempty_pct": 88.0464,
+      "n_555": 3,
+      "n_zero": 5333,
+      "n_unique_nonempty": 5
+    },
+    "EDAD": {
+      "nonempty": 14280,
+      "nonempty_pct": 99.8811,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 89
+    },
+    "EEF": {
+      "nonempty": 12542,
+      "nonempty_pct": 87.7247,
+      "n_555": 1,
+      "n_zero": 12218,
+      "n_unique_nonempty": 3
+    },
+    "EMBOLIA": {
+      "nonempty": 4,
+      "nonempty_pct": 0.028,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 2
+    },
+    "ENF_VALV_P": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 2
+    },
+    "ENTRESTO": {
+      "nonempty": 7540,
+      "nonempty_pct": 52.7383,
+      "n_555": 675,
+      "n_zero": 5941,
+      "n_unique_nonempty": 3
+    },
+    "ERC": {
+      "nonempty": 12427,
+      "nonempty_pct": 86.9203,
+      "n_555": 3,
+      "n_zero": 9863,
+      "n_unique_nonempty": 4
+    },
+    "ERGOMETRIA": {
+      "nonempty": 12549,
+      "nonempty_pct": 87.7737,
+      "n_555": 1,
+      "n_zero": 12259,
+      "n_unique_nonempty": 3
+    },
+    "ESTAT": {
+      "nonempty": 12501,
+      "nonempty_pct": 87.4379,
+      "n_555": 965,
+      "n_zero": 2745,
+      "n_unique_nonempty": 3
+    },
+    "ETE": {
+      "nonempty": 12551,
+      "nonempty_pct": 87.7876,
+      "n_555": 1,
+      "n_zero": 11952,
+      "n_unique_nonempty": 3
+    },
+    "EVOLUCION": {
+      "nonempty": 526,
+      "nonempty_pct": 3.6791,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 498
+    },
+    "EVO_ACVHEM": {
+      "nonempty": 879,
+      "nonempty_pct": 6.1481,
+      "n_555": 0,
+      "n_zero": 871,
+      "n_unique_nonempty": 2
+    },
+    "EVO_ACVHEM1": {
+      "nonempty": 876,
+      "nonempty_pct": 6.1272,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 412
+    },
+    "EVO_ACVISQ": {
+      "nonempty": 876,
+      "nonempty_pct": 6.1272,
+      "n_555": 0,
+      "n_zero": 848,
+      "n_unique_nonempty": 2
+    },
+    "EVO_ACVISQ1": {
+      "nonempty": 875,
+      "nonempty_pct": 6.1202,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 422
+    },
+    "EVO_AI": {
+      "nonempty": 1544,
+      "nonempty_pct": 10.7995,
+      "n_555": 0,
+      "n_zero": 1314,
+      "n_unique_nonempty": 2
+    },
+    "EVO_AI_FEC": {
+      "nonempty": 1515,
+      "nonempty_pct": 10.5966,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 778
+    },
+    "EVO_AVC": {
+      "nonempty": 1453,
+      "nonempty_pct": 10.163,
+      "n_555": 0,
+      "n_zero": 1426,
+      "n_unique_nonempty": 2
+    },
+    "EVO_AVC_FE": {
+      "nonempty": 1424,
+      "nonempty_pct": 9.9601,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 676
+    },
+    "EVO_CABG": {
+      "nonempty": 1456,
+      "nonempty_pct": 10.184,
+      "n_555": 0,
+      "n_zero": 1374,
+      "n_unique_nonempty": 2
+    },
+    "EVO_CABG_F": {
+      "nonempty": 1440,
+      "nonempty_pct": 10.072,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 710
+    },
+    "EVO_EXITUS": {
+      "nonempty": 2030,
+      "nonempty_pct": 14.1988,
+      "n_555": 0,
+      "n_zero": 1722,
+      "n_unique_nonempty": 2
+    },
+    "EVO_EXITUS1": {
+      "nonempty": 1965,
+      "nonempty_pct": 13.7441,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1017
+    },
+    "EVO_IAM": {
+      "nonempty": 1692,
+      "nonempty_pct": 11.8347,
+      "n_555": 0,
+      "n_zero": 1281,
+      "n_unique_nonempty": 2
+    },
+    "EVO_IAM_FE": {
+      "nonempty": 1666,
+      "nonempty_pct": 11.6528,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 915
+    },
+    "EVO_IC": {
+      "nonempty": 2070,
+      "nonempty_pct": 14.4786,
+      "n_555": 0,
+      "n_zero": 1010,
+      "n_unique_nonempty": 2
+    },
+    "EVO_IC_FEC": {
+      "nonempty": 2041,
+      "nonempty_pct": 14.2757,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1266
+    },
+    "EVO_REINGR": {
+      "nonempty": 2745,
+      "nonempty_pct": 19.1998,
+      "n_555": 0,
+      "n_zero": 753,
+      "n_unique_nonempty": 2
+    },
+    "EVO_REINGR1": {
+      "nonempty": 2703,
+      "nonempty_pct": 18.9061,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1665
+    },
+    "EVO_REINGR2": {
+      "nonempty": 1482,
+      "nonempty_pct": 10.3658,
+      "n_555": 0,
+      "n_zero": 1247,
+      "n_unique_nonempty": 3
+    },
+    "EVO_REINGR3": {
+      "nonempty": 1457,
+      "nonempty_pct": 10.1909,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 778
+    },
+    "EVO_REVSC": {
+      "nonempty": 1471,
+      "nonempty_pct": 10.2889,
+      "n_555": 0,
+      "n_zero": 1399,
+      "n_unique_nonempty": 2
+    },
+    "EVO_REVSC_": {
+      "nonempty": 1448,
+      "nonempty_pct": 10.128,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 709
+    },
+    "EVO_SANG": {
+      "nonempty": 871,
+      "nonempty_pct": 6.0922,
+      "n_555": 0,
+      "n_zero": 815,
+      "n_unique_nonempty": 2
+    },
+    "EVO_SANGFE": {
+      "nonempty": 870,
+      "nonempty_pct": 6.0852,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 433
+    },
+    "EVO_SANG_G": {
+      "nonempty": 870,
+      "nonempty_pct": 6.0852,
+      "n_555": 0,
+      "n_zero": 832,
+      "n_unique_nonempty": 2
+    },
+    "EVO_SANG_G1": {
+      "nonempty": 870,
+      "nonempty_pct": 6.0852,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 419
+    },
+    "EV_NACO": {
+      "nonempty": 110,
+      "nonempty_pct": 0.7694,
+      "n_555": 0,
+      "n_zero": 104,
+      "n_unique_nonempty": 2
+    },
+    "EXFUMADOR": {
+      "nonempty": 12567,
+      "nonempty_pct": 87.8996,
+      "n_555": 5,
+      "n_zero": 9457,
+      "n_unique_nonempty": 4
+    },
+    "EZE1": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 82,
+      "n_unique_nonempty": 3
+    },
+    "EZE2": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 79,
+      "n_unique_nonempty": 3
+    },
+    "EZETIM": {
+      "nonempty": 581,
+      "nonempty_pct": 4.0638,
+      "n_555": 2,
+      "n_zero": 504,
+      "n_unique_nonempty": 4
+    },
+    "FE": {
+      "nonempty": 12257,
+      "nonempty_pct": 85.7313,
+      "n_555": 118,
+      "n_zero": 27,
+      "n_unique_nonempty": 82
+    },
+    "FECHA_ALTA": {
+      "nonempty": 14279,
+      "nonempty_pct": 99.8741,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 4064
+    },
+    "FECHA_INGR": {
+      "nonempty": 14294,
+      "nonempty_pct": 99.979,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 5070
+    },
+    "FECHA_ASIG": {
+      "nonempty": 14243,
+      "nonempty_pct": 99.6223,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 3596
+    },
+    "FECHA_CCA": {
+      "nonempty": 1,
+      "nonempty_pct": 0.007,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "FECHA_ECO": {
+      "nonempty": 418,
+      "nonempty_pct": 2.9237,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 280
+    },
+    "FECH_LDL2": {
+      "nonempty": 67,
+      "nonempty_pct": 0.4686,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 63
+    },
+    "FECH_LDL3": {
+      "nonempty": 16,
+      "nonempty_pct": 0.1119,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 15
+    },
+    "FIRMADO_EC": {
+      "nonempty": 407,
+      "nonempty_pct": 2.8468,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 6
+    },
+    "FISTULA": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 3,
+      "n_unique_nonempty": 1
+    },
+    "FUMADOR": {
+      "nonempty": 12568,
+      "nonempty_pct": 87.9066,
+      "n_555": 5,
+      "n_zero": 9847,
+      "n_unique_nonempty": 3
+    },
+    "GERMEN": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "GLINIDAS": {
+      "nonempty": 329,
+      "nonempty_pct": 2.3012,
+      "n_555": 0,
+      "n_zero": 280,
+      "n_unique_nonempty": 2
+    },
+    "GLP1": {
+      "nonempty": 291,
+      "nonempty_pct": 2.0354,
+      "n_555": 0,
+      "n_zero": 224,
+      "n_unique_nonempty": 2
+    },
+    "GLUC": {
+      "nonempty": 10709,
+      "nonempty_pct": 74.9038,
+      "n_555": 194,
+      "n_zero": 0,
+      "n_unique_nonempty": 362
+    },
+    "GRUPO_DX": {
+      "nonempty": 13293,
+      "nonempty_pct": 92.9775,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 13
+    },
+    "HASBLED": {
+      "nonempty": 112,
+      "nonempty_pct": 0.7834,
+      "n_555": 0,
+      "n_zero": 3,
+      "n_unique_nonempty": 5
+    },
+    "HB": {
+      "nonempty": 12536,
+      "nonempty_pct": 87.6827,
+      "n_555": 13,
+      "n_zero": 1,
+      "n_unique_nonempty": 207
+    },
+    "HB1AC": {
+      "nonempty": 12264,
+      "nonempty_pct": 85.7802,
+      "n_555": 1717,
+      "n_zero": 2,
+      "n_unique_nonempty": 146
+    },
+    "HB1AC_2": {
+      "nonempty": 1024,
+      "nonempty_pct": 7.1623,
+      "n_555": 755,
+      "n_zero": 1,
+      "n_unique_nonempty": 46
+    },
+    "HDL": {
+      "nonempty": 12099,
+      "nonempty_pct": 84.6261,
+      "n_555": 915,
+      "n_zero": 0,
+      "n_unique_nonempty": 111
+    },
+    "HDL2": {
+      "nonempty": 271,
+      "nonempty_pct": 1.8955,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 50
+    },
+    "HDL3": {
+      "nonempty": 16,
+      "nonempty_pct": 0.1119,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 15
+    },
+    "HOLTER": {
+      "nonempty": 12547,
+      "nonempty_pct": 87.7597,
+      "n_555": 1,
+      "n_zero": 12453,
+      "n_unique_nonempty": 3
+    },
+    "HTA": {
+      "nonempty": 12611,
+      "nonempty_pct": 88.2073,
+      "n_555": 4,
+      "n_zero": 3476,
+      "n_unique_nonempty": 6
+    },
+    "IAMSEST2": {
+      "nonempty": 9185,
+      "nonempty_pct": 64.2442,
+      "n_555": 89,
+      "n_zero": 8871,
+      "n_unique_nonempty": 3
+    },
+    "IAM_ANT40": {
+      "nonempty": 9039,
+      "nonempty_pct": 63.2231,
+      "n_555": 77,
+      "n_zero": 8691,
+      "n_unique_nonempty": 3
+    },
+    "IC": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 2
+    },
+    "IECA": {
+      "nonempty": 12477,
+      "nonempty_pct": 87.2701,
+      "n_555": 976,
+      "n_zero": 7790,
+      "n_unique_nonempty": 3
+    },
+    "INGRESO_PR": {
+      "nonempty": 12555,
+      "nonempty_pct": 87.8156,
+      "n_555": 3,
+      "n_zero": 8489,
+      "n_unique_nonempty": 3
+    },
+    "INR_2": {
+      "nonempty": 332,
+      "nonempty_pct": 2.3222,
+      "n_555": 0,
+      "n_zero": 59,
+      "n_unique_nonempty": 8
+    },
+    "INR_3": {
+      "nonempty": 330,
+      "nonempty_pct": 2.3082,
+      "n_555": 0,
+      "n_zero": 79,
+      "n_unique_nonempty": 7
+    },
+    "INR_TOTALE": {
+      "nonempty": 339,
+      "nonempty_pct": 2.3711,
+      "n_555": 0,
+      "n_zero": 6,
+      "n_unique_nonempty": 14
+    },
+    "INSULINA": {
+      "nonempty": 12483,
+      "nonempty_pct": 87.312,
+      "n_555": 967,
+      "n_zero": 10086,
+      "n_unique_nonempty": 4
+    },
+    "INTERESANT": {
+      "nonempty": 142,
+      "nonempty_pct": 0.9932,
+      "n_555": 0,
+      "n_zero": 45,
+      "n_unique_nonempty": 2
+    },
+    "IPCSK90": {
+      "nonempty": 127,
+      "nonempty_pct": 0.8883,
+      "n_555": 2,
+      "n_zero": 105,
+      "n_unique_nonempty": 3
+    },
+    "IPCSK91": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 97,
+      "n_unique_nonempty": 2
+    },
+    "IPCSK92": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 10,
+      "n_zero": 97,
+      "n_unique_nonempty": 2
+    },
+    "IVABRADINA": {
+      "nonempty": 12468,
+      "nonempty_pct": 87.2071,
+      "n_555": 977,
+      "n_zero": 10943,
+      "n_unique_nonempty": 3
+    },
+    "IVR": {
+      "nonempty": 606,
+      "nonempty_pct": 4.2387,
+      "n_555": 1,
+      "n_zero": 499,
+      "n_unique_nonempty": 3
+    },
+    "LDL": {
+      "nonempty": 10873,
+      "nonempty_pct": 76.0509,
+      "n_555": 837,
+      "n_zero": 1,
+      "n_unique_nonempty": 250
+    },
+    "LDL2": {
+      "nonempty": 375,
+      "nonempty_pct": 2.6229,
+      "n_555": 40,
+      "n_zero": 0,
+      "n_unique_nonempty": 107
+    },
+    "LDL3": {
+      "nonempty": 123,
+      "nonempty_pct": 0.8603,
+      "n_555": 41,
+      "n_zero": 0,
+      "n_unique_nonempty": 61
+    },
+    "MCP": {
+      "nonempty": 12556,
+      "nonempty_pct": 87.8226,
+      "n_555": 2,
+      "n_zero": 11073,
+      "n_unique_nonempty": 3
+    },
+    "MEDIANA": {
+      "nonempty": 14297,
+      "nonempty_pct": 100.0,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "MEDIA_DIAS": {
+      "nonempty": 14297,
+      "nonempty_pct": 100.0,
+      "n_555": 0,
+      "n_zero": 82,
+      "n_unique_nonempty": 111
+    },
+    "MEDIA_EDAD": {
+      "nonempty": 14297,
+      "nonempty_pct": 100.0,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "MET": {
+      "nonempty": 426,
+      "nonempty_pct": 2.9796,
+      "n_555": 0,
+      "n_zero": 209,
+      "n_unique_nonempty": 2
+    },
+    "NA": {
+      "nonempty": 12519,
+      "nonempty_pct": 87.5638,
+      "n_555": 22,
+      "n_zero": 0,
+      "n_unique_nonempty": 74
+    },
+    "NACOS": {
+      "nonempty": 10054,
+      "nonempty_pct": 70.3224,
+      "n_555": 862,
+      "n_zero": 7347,
+      "n_unique_nonempty": 4
+    },
+    "NEGATIVO": {
+      "nonempty": 370,
+      "nonempty_pct": 2.588,
+      "n_555": 0,
+      "n_zero": 365,
+      "n_unique_nonempty": 2
+    },
+    "NEURO": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 1,
+      "n_unique_nonempty": 3
+    },
+    "NHC": {
+      "nonempty": 14293,
+      "nonempty_pct": 99.972,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 11211
+    },
+    "NITRITOS": {
+      "nonempty": 12472,
+      "nonempty_pct": 87.2351,
+      "n_555": 977,
+      "n_zero": 10487,
+      "n_unique_nonempty": 4
+    },
+    "NOMBRE": {
+      "nonempty": 14295,
+      "nonempty_pct": 99.986,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 11633
+    },
+    "NUM_PAC": {
+      "nonempty": 14292,
+      "nonempty_pct": 99.965,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "OBESIDAD": {
+      "nonempty": 12283,
+      "nonempty_pct": 85.9131,
+      "n_555": 4,
+      "n_zero": 10000,
+      "n_unique_nonempty": 6
+    },
+    "OBSERVACIO": {
+      "nonempty": 72,
+      "nonempty_pct": 0.5036,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 63
+    },
+    "OBS_EVOL": {
+      "nonempty": 1311,
+      "nonempty_pct": 9.1698,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1262
+    },
+    "OTRA_EST": {
+      "nonempty": 483,
+      "nonempty_pct": 3.3783,
+      "n_555": 0,
+      "n_zero": 439,
+      "n_unique_nonempty": 2
+    },
+    "PCR": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "PERIIAM": {
+      "nonempty": 6,
+      "nonempty_pct": 0.042,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "PITAVASTAT": {
+      "nonempty": 480,
+      "nonempty_pct": 3.3573,
+      "n_555": 0,
+      "n_zero": 470,
+      "n_unique_nonempty": 3
+    },
+    "PORCENT": {
+      "nonempty": 333,
+      "nonempty_pct": 2.3292,
+      "n_555": 0,
+      "n_zero": 9,
+      "n_unique_nonempty": 29
+    },
+    "PRASUG": {
+      "nonempty": 12424,
+      "nonempty_pct": 86.8993,
+      "n_555": 975,
+      "n_zero": 10647,
+      "n_unique_nonempty": 3
+    },
+    "PRIMER_EPI": {
+      "nonempty": 3,
+      "nonempty_pct": 0.021,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "PROCEDENCI": {
+      "nonempty": 14160,
+      "nonempty_pct": 99.0418,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 8
+    },
+    "PROTOCOLO_": {
+      "nonempty": 74,
+      "nonempty_pct": 0.5176,
+      "n_555": 0,
+      "n_zero": 43,
+      "n_unique_nonempty": 2
+    },
+    "RANOLAZINA": {
+      "nonempty": 12473,
+      "nonempty_pct": 87.2421,
+      "n_555": 977,
+      "n_zero": 10805,
+      "n_unique_nonempty": 3
+    },
+    "RIVAROXABA": {
+      "nonempty": 11727,
+      "nonempty_pct": 82.0242,
+      "n_555": 975,
+      "n_zero": 10225,
+      "n_unique_nonempty": 3
+    },
+    "RMC": {
+      "nonempty": 12559,
+      "nonempty_pct": 87.8436,
+      "n_555": 1,
+      "n_zero": 11335,
+      "n_unique_nonempty": 4
+    },
+    "ROSUVASTAT": {
+      "nonempty": 491,
+      "nonempty_pct": 3.4343,
+      "n_555": 0,
+      "n_zero": 439,
+      "n_unique_nonempty": 3
+    },
+    "SPECT": {
+      "nonempty": 12542,
+      "nonempty_pct": 87.7247,
+      "n_555": 2,
+      "n_zero": 12507,
+      "n_unique_nonempty": 4
+    },
+    "STENT": {
+      "nonempty": 12564,
+      "nonempty_pct": 87.8786,
+      "n_555": 2,
+      "n_zero": 8574,
+      "n_unique_nonempty": 5
+    },
+    "SU": {
+      "nonempty": 295,
+      "nonempty_pct": 2.0634,
+      "n_555": 0,
+      "n_zero": 287,
+      "n_unique_nonempty": 2
+    },
+    "TC_CORON": {
+      "nonempty": 12522,
+      "nonempty_pct": 87.5848,
+      "n_555": 2,
+      "n_zero": 12271,
+      "n_unique_nonempty": 3
+    },
+    "TICA": {
+      "nonempty": 10811,
+      "nonempty_pct": 75.6173,
+      "n_555": 934,
+      "n_zero": 8716,
+      "n_unique_nonempty": 3
+    },
+    "TIEMPO_3AT": {
+      "nonempty": 203,
+      "nonempty_pct": 1.4199,
+      "n_555": 0,
+      "n_zero": 2,
+      "n_unique_nonempty": 21
+    },
+    "TRATAMIENT": {
+      "nonempty": 12846,
+      "nonempty_pct": 89.851,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 12118
+    },
+    "TROMBO": {
+      "nonempty": 136,
+      "nonempty_pct": 0.9512,
+      "n_555": 0,
+      "n_zero": 121,
+      "n_unique_nonempty": 2
+    },
+    "UCO": {
+      "nonempty": 12616,
+      "nonempty_pct": 88.2423,
+      "n_555": 2,
+      "n_zero": 7265,
+      "n_unique_nonempty": 4
+    },
+    "VALVULA_AF": {
+      "nonempty": 4,
+      "nonempty_pct": 0.028,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 4
+    },
+    "VALV_MEC": {
+      "nonempty": 133,
+      "nonempty_pct": 0.9303,
+      "n_555": 0,
+      "n_zero": 127,
+      "n_unique_nonempty": 2
+    },
+    "VARON": {
+      "nonempty": 13231,
+      "nonempty_pct": 92.5439,
+      "n_555": 0,
+      "n_zero": 4571,
+      "n_unique_nonempty": 3
+    },
+    "VEG_TAM": {
+      "nonempty": 2,
+      "nonempty_pct": 0.014,
+      "n_555": 1,
+      "n_zero": 0,
+      "n_unique_nonempty": 2
+    },
+    "VICENTE": {
+      "nonempty": 191,
+      "nonempty_pct": 1.3359,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "DOSIS0": {
+      "nonempty": 107,
+      "nonempty_pct": 0.7484,
+      "n_555": 1,
+      "n_zero": 4,
+      "n_unique_nonempty": 5
+    },
+    "TAVI": {
+      "nonempty": 3935,
+      "nonempty_pct": 27.5233,
+      "n_555": 0,
+      "n_zero": 3862,
+      "n_unique_nonempty": 2
+    },
+    "SATISFCCIO": {
+      "nonempty": 0,
+      "nonempty_pct": 0.0,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 0
+    },
+    "ADHERENCIA": {
+      "nonempty": 0,
+      "nonempty_pct": 0.0,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 0
+    },
+    "ADE_2": {
+      "nonempty": 198,
+      "nonempty_pct": 1.3849,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 56
+    },
+    "FECHA_ADE_": {
+      "nonempty": 203,
+      "nonempty_pct": 1.4199,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 127
+    },
+    "FECHA_A1C2": {
+      "nonempty": 5,
+      "nonempty_pct": 0.035,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 5
+    },
+    "ISLGT2": {
+      "nonempty": 2726,
+      "nonempty_pct": 19.0669,
+      "n_555": 64,
+      "n_zero": 497,
+      "n_unique_nonempty": 3
+    },
+    "DOSIS_MAX_": {
+      "nonempty": 14,
+      "nonempty_pct": 0.0979,
+      "n_555": 0,
+      "n_zero": 4,
+      "n_unique_nonempty": 4
+    },
+    "CR_2": {
+      "nonempty": 202,
+      "nonempty_pct": 1.4129,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 93
+    },
+    "BEMPE": {
+      "nonempty": 1945,
+      "nonempty_pct": 13.6043,
+      "n_555": 149,
+      "n_zero": 1679,
+      "n_unique_nonempty": 3
+    },
+    "EZE": {
+      "nonempty": 1943,
+      "nonempty_pct": 13.5903,
+      "n_555": 149,
+      "n_zero": 977,
+      "n_unique_nonempty": 3
+    },
+    "TRIG": {
+      "nonempty": 1905,
+      "nonempty_pct": 13.3245,
+      "n_555": 123,
+      "n_zero": 0,
+      "n_unique_nonempty": 275
+    },
+    "VAZK": {
+      "nonempty": 1958,
+      "nonempty_pct": 13.6952,
+      "n_555": 140,
+      "n_zero": 1706,
+      "n_unique_nonempty": 3
+    },
+    "PCSK9": {
+      "nonempty": 1955,
+      "nonempty_pct": 13.6742,
+      "n_555": 136,
+      "n_zero": 1783,
+      "n_unique_nonempty": 3
+    },
+    "TG2": {
+      "nonempty": 206,
+      "nonempty_pct": 1.4409,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 120
+    },
+    "LPA": {
+      "nonempty": 40,
+      "nonempty_pct": 0.2798,
+      "n_555": 1,
+      "n_zero": 0,
+      "n_unique_nonempty": 34
+    },
+    "OPTIMZ": {
+      "nonempty": 63,
+      "nonempty_pct": 0.4407,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 1
+    },
+    "ENT_SEGUIM": {
+      "nonempty": 45,
+      "nonempty_pct": 0.3148,
+      "n_555": 0,
+      "n_zero": 31,
+      "n_unique_nonempty": 2
+    },
+    "ISLGT2_SEG": {
+      "nonempty": 45,
+      "nonempty_pct": 0.3148,
+      "n_555": 0,
+      "n_zero": 4,
+      "n_unique_nonempty": 2
+    },
+    "BETA_SEGUI": {
+      "nonempty": 45,
+      "nonempty_pct": 0.3148,
+      "n_555": 0,
+      "n_zero": 6,
+      "n_unique_nonempty": 2
+    },
+    "AMR_SEGUIM": {
+      "nonempty": 45,
+      "nonempty_pct": 0.3148,
+      "n_555": 0,
+      "n_zero": 22,
+      "n_unique_nonempty": 2
+    },
+    "CR2": {
+      "nonempty": 31,
+      "nonempty_pct": 0.2168,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 29
+    },
+    "K2": {
+      "nonempty": 31,
+      "nonempty_pct": 0.2168,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 14
+    },
+    "PAS2": {
+      "nonempty": 27,
+      "nonempty_pct": 0.1889,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 21
+    },
+    "FECHA2": {
+      "nonempty": 31,
+      "nonempty_pct": 0.2168,
+      "n_555": 0,
+      "n_zero": 0,
+      "n_unique_nonempty": 25
+    },
+    "FASE2B": {
+      "nonempty": 63,
+      "nonempty_pct": 0.4407,
+      "n_555": 0,
+      "n_zero": 36,
+      "n_unique_nonempty": 2
+    }
+  }
+}

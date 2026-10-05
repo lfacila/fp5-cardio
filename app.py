@@ -3,7 +3,7 @@ import io
 import json
 import math
 import re
-from datetime import datetime
+from datetime import datetime, date, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -18,13 +18,27 @@ st.set_page_config(
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-REGISTRY = json.loads((BASE_DIR / "field_registry_v3.json").read_text(encoding="utf-8"))
+REGISTRY = json.loads((BASE_DIR / "field_registry_v4.json").read_text(encoding="utf-8"))
 SOURCE_REGISTRY = json.loads((BASE_DIR / "source_fields_208.json").read_text(encoding="utf-8"))
 RETIRED_FIELDS = {x["field"] for x in SOURCE_REGISTRY["fields"]} - {f["field"] for f in REGISTRY["fields"]}
 SOURCE_FIELDS = SOURCE_REGISTRY["fields"]
 FIELDS = REGISTRY["fields"]
 FIELD_BY_NAME = {f["field"]: f for f in FIELDS}
+PREVALENCE_THRESHOLD = float(REGISTRY.get("threshold_nonempty_pct_strict_gt", 10.0))
+RETIRED_META = json.loads((BASE_DIR / "retired_fields_v4.json").read_text(encoding="utf-8"))["fields"]
+PREVALENCE_META = json.loads((BASE_DIR / "field_prevalence_v1.json").read_text(encoding="utf-8"))["fields"]
 FIELD_LABELS = {f["field"]: f["label"] for f in FIELDS}
+
+# Structural QA: refuse to run if the shipped registry is inconsistent.
+if len(SOURCE_FIELDS) != 208:
+    st.error(f"Diccionario FP5 corrupto: se esperaban 208 campos de origen y hay {len(SOURCE_FIELDS)}.")
+    st.stop()
+if len(FIELDS) != 106:
+    st.error(f"Diccionario FP5 v12 corrupto: se esperaban 106 variables activas y hay {len(FIELDS)}.")
+    st.stop()
+if len(RETIRED_FIELDS) != 102 or set(FIELD_BY_NAME) & RETIRED_FIELDS:
+    st.error("Inconsistencia entre variables activas y archivadas.")
+    st.stop()
 CLINICAL_GROUPS = [
     ("Antecedentes / riesgo", "risk_history"),
     ("Diagnóstico", "diagnosis"),
@@ -149,8 +163,6 @@ def episode_key(source_row, row_values):
 
 
 def parse_fp5_csv_bytes(content):
-    # El export original tiene 208 columnas. La aplicación activa usa 204:
-    # cuatro campos han sido retirados explícitamente del modelo clínico.
     df = pd.read_csv(
         io.BytesIO(content),
         header=None,
@@ -163,31 +175,33 @@ def parse_fp5_csv_bytes(content):
     if df.shape[1] != len(SOURCE_FIELDS):
         raise ValueError(f"El CSV tiene {df.shape[1]} columnas; el export FP5 esperado tiene {len(SOURCE_FIELDS)}.")
     df.columns = [f["field"] for f in SOURCE_FIELDS]
-    # Mantiene únicamente las variables activas (retired fields quedan fuera del modelo).
-    active_cols = [f["field"] for f in FIELDS]
-    return df[active_cols].copy()
-
+    return df
 
 def profile_import(df):
+    active_names = [f["field"] for f in FIELDS]
+    active_df = df[active_names]
     nhc = df["NHC"] if "NHC" in df else pd.Series([], dtype=str)
     dup_full = df.duplicated(keep=False)
     return {
         "rows": len(df),
-        "cols": len(df.columns),
+        "cols": len(active_df.columns),
         "source_cols": len(SOURCE_FIELDS),
-        "active_cols": len(FIELDS),
-        "retired_cols": len(RETIRED_FIELDS),
+        "active_cols": len(active_names),
+        "retired_cols": len(SOURCE_FIELDS) - len(active_names),
         "nonempty_nhc": int(nhc[nhc != ""].nunique()) if len(nhc) else 0,
         "blank_nhc": int((nhc == "").sum()) if len(nhc) else 0,
         "repeated_nhc_rows": int(nhc[nhc != ""].duplicated(keep=False).sum()) if len(nhc) else 0,
         "exact_duplicate_rows": int(dup_full.sum()),
-        "blank_cells": int((df == "").sum().sum()),
-        "missing_555_cells": int((df == "555").sum().sum()),
-        "zero_cells": int((df == "0").sum().sum()),
-        "empty_fields": [f["field"] for f in FIELDS if (df[f["field"]] == "").all()],
+        "blank_cells": int((active_df == "").sum().sum()),
+        "blank_cells_source": int((df == "").sum().sum()),
+        "missing_555_cells": int((active_df == "555").sum().sum()),
+        "missing_555_cells_source": int((df == "555").sum().sum()),
+        "zero_cells": int((active_df == "0").sum().sum()),
+        "zero_cells_source": int((df == "0").sum().sum()),
+        "empty_fields": [f for f in active_names if (df[f] == "").all()],
     }
 
-
+@st.cache_resource(show_spinner=False)
 def seed_field_definitions():
     rows = []
     for f in FIELDS:
@@ -352,31 +366,24 @@ def import_fp5(content, filename, dry_run=False, limit=None):
 
     patients = {}
     episode_rows = []
+    source_names = [f["field"] for f in SOURCE_FIELDS]
+    active_names = [f["field"] for f in FIELDS]
     for idx, row in enumerate(df.itertuples(index=False, name=None), start=1):
-        raw = {FIELDS[j]["field"]: clean(row[j]) for j in range(len(FIELDS))}
+        raw = {source_names[j]: clean(row[j]) for j in range(len(source_names))}
+        active_raw = {name: raw.get(name, "") for name in active_names}
         nhc = raw.get("NHC", "")
         pkey = patient_key(nhc, idx)
         ep_id = episode_key(idx, row)
         name = raw.get("NOMBRE", "")
         if pkey not in patients:
-            patients[pkey] = {
-                "patient_id": pkey,
-                "nhc": nhc or None,
-                "display_name": name or None,
-                "updated_at": now_iso(),
-            }
+            patients[pkey] = {"patient_id": pkey, "nhc": nhc or None, "display_name": name or None, "updated_at": now_iso()}
         elif not patients[pkey].get("display_name") and name:
             patients[pkey]["display_name"] = name
-        validated, statuses = normalize_row(raw)
+        validated, statuses = normalize_row(active_raw)
         episode_rows.append({
-            "episode_id": ep_id,
-            "patient_id": pkey,
-            "source_row": idx,
-            "raw_data": raw,
-            "validated_data": validated,
-            "field_status": statuses,
-            "updated_at": now_iso(),
-            "updated_by": "FP5_IMPORT",
+            "episode_id": ep_id, "patient_id": pkey, "source_row": idx,
+            "raw_data": raw, "validated_data": validated, "field_status": statuses,
+            "updated_at": now_iso(), "updated_by": "FP5_IMPORT",
         })
 
     patient_rows = list(patients.values())
@@ -387,15 +394,13 @@ def import_fp5(content, filename, dry_run=False, limit=None):
     for i in range(0, len(episode_rows), 100):
         batch = episode_rows[i:i+100]
         supabase.table("fp5_episodes").upsert(batch, on_conflict="episode_id").execute()
-        progress.progress(min(1.0, (i + len(batch)) / len(episode_rows)), text=f"Episodios {i+len(batch)} / {len(episode_rows)}")
+        progress.progress(min(1.0, (i + len(batch)) / max(1, len(episode_rows))), text=f"Episodios {i+len(batch)} / {len(episode_rows)}")
     progress.empty()
 
     if run_id:
         supabase.table("fp5_import_runs").update({
-            "inserted_patients": len(patient_rows),
-            "inserted_episodes": len(episode_rows),
-            "status": "completed",
-            "completed_at": now_iso(),
+            "inserted_patients": len(patient_rows), "inserted_episodes": len(episode_rows),
+            "status": "completed", "completed_at": now_iso(),
         }).eq("id", run_id).execute()
     profile["patients_created"] = len(patient_rows)
     profile["episodes_created"] = len(episode_rows)
@@ -553,7 +558,7 @@ def audit_for_episode(eid):
 INGRESO_FIELDS = [
     "NHC","NOMBRE","EDAD","VARON","FECHA_INGR","FECHA_ASIG","CAMA",
     "CARDIOLOGO","PROCEDENCI","CENTRO","INGRESO_PR","PRIMER_EPI",
-    "DIAG_INGRE","OBSERVACIO","DIAS_ASIG"
+    "DIAG_INGRE","OBSERVACIO","DIAS_ASIG","CP","CSIP"
 ]
 
 ALTA_RISK_FIELDS = [
@@ -562,7 +567,7 @@ ALTA_RISK_FIELDS = [
     "VALV_MEC","TROMBO","HASBLED","FISTULA","IAMSEST2","IAM_ANT40","IC"
 ]
 ALTA_DIAG_FIELDS=["DIAG_ALTA","GRUPO_DX"]
-ALTA_LAB_FIELDS=["HB","HB1AC","ADE","GLUC","CR","NA","LDL","HDL","TRIG","ALBUMINA","PCR","INR_2","INR_3","INR_TOTALE","NITRITOS","FE","LPA"]
+ALTA_LAB_FIELDS=["HB","HB1AC","ADE","GLUC","CR","NA","LDL","HDL","TRIG","ALBUMINA","PCR","INR_2","INR_3","INR_TOTALE","NITRITOS","FE","LPA","AREA"]
 ALTA_TX_FIELDS=[
     "AAS","ACO","NACOS","APIXABAN","DABIGATRAN","RIVAROXABA","IECA","ARA2","BETABLOQ","ANTAG_ALDO","DIURETICOS",
     "ESTAT","ATORVASTAT","ROSUVASTAT","PITAVASTAT","EZETIM","EZE1","EZE2","BEMPE","PCSK9","VAZK","IVABRADINA","RANOLAZINA",
@@ -654,7 +659,7 @@ def parse_date_key(v):
 def _all_episode_summaries_cached():
     out=[]; offset=0; batch=1000
     while True:
-        part=(supabase.table("fp5_episodes").select("episode_id,patient_id,source_row,raw_data,validated_data,field_status,updated_at").range(offset,offset+batch-1).execute().data or [])
+        part=(supabase.table("fp5_episodes").select("episode_id,patient_id,source_row,raw_data,validated_data,updated_at").range(offset,offset+batch-1).execute().data or [])
         out.extend(part)
         if len(part)<batch: break
         offset += batch
@@ -675,32 +680,58 @@ def episode_counts_from_rows(rows):
         if pid: c[pid]=c.get(pid,0)+1
     return c
 
+def effective_value(e, field):
+    """Value used by the UI: explicit validated override, otherwise original FP5."""
+    validated = e.get("validated_data") or {}
+    raw = e.get("raw_data") or {}
+    if field in validated:
+        return validated.get(field)
+    return raw.get(field, "")
+
+def display_date(v):
+    if v in (None, ""):
+        return ""
+    s = str(v)
+    try:
+        return datetime.strptime(s, "%Y-%m-%d").strftime("%d/%m/%Y")
+    except Exception:
+        return s
+
+
 def current_status(e):
-    r=e.get("raw_data") or {}; ing=clean(r.get("FECHA_INGR")); alt=clean(r.get("FECHA_ALTA")); asig=clean(r.get("FECHA_ASIG"))
+    ing=clean(effective_value(e,"FECHA_INGR")); alt=clean(effective_value(e,"FECHA_ALTA")); asig=clean(effective_value(e,"FECHA_ASIG"))
     if ing and not alt and not asig: return "Pendiente asignación"
     if ing and not alt and asig: return "Ingresado"
     if alt: return "Alta"
     return "Sin fecha"
 
+
 def filter_operational_rows(view="Ingresados ahora",search="",doctor="Todos",date_from=None,date_to=None):
     rows=_all_episode_summaries_cached(); counts=episode_counts_from_rows(rows); search=clean(search).lower()
     out=[]
     for e in rows:
-        r=e.get("raw_data") or {}; ing=clean(r.get("FECHA_INGR")); alt=clean(r.get("FECHA_ALTA")); asig=clean(r.get("FECHA_ASIG")); nhc=clean(r.get("NHC")); name=clean(r.get("NOMBRE")); doc=clean(r.get("CARDIOLOGO"))
+        ing=clean(effective_value(e,"FECHA_INGR")); alt=clean(effective_value(e,"FECHA_ALTA")); asig=clean(effective_value(e,"FECHA_ASIG"))
+        nhc=clean(effective_value(e,"NHC")); name=clean(effective_value(e,"NOMBRE")); doc=clean(effective_value(e,"CARDIOLOGO"))
+        d=valid_date_text(ing) if ing else None
         if view=="Ingresados ahora" and not (ing and not alt): continue
         if view=="Pendientes de asignación" and not (ing and not asig and not alt): continue
         if view=="Dados de alta" and not alt: continue
         if view=="Reingresos" and counts.get(e.get("patient_id"),0)<=1: continue
         if view=="Todos" and not (ing or alt or nhc or name): continue
-        if search and not any(search in x.lower() for x in [nhc,name,clean(r.get("DIAG_INGRE")).lower(),clean(r.get("DIAG_ALTA")).lower()]): continue
+        if search and not any(search in clean(x).lower() for x in [nhc,name,clean(effective_value(e,"DIAG_INGRE")),clean(effective_value(e,"DIAG_ALTA"))]): continue
         if doctor!="Todos" and doc!=doctor: continue
-        d=valid_date_text(ing)
-        if date_from and d and d.date()<date_from: continue
-        if date_to and d and d.date()>date_to: continue
-        item={"episode_id":e["episode_id"],"patient_id":e["patient_id"],"source_row":e.get("source_row"),"NHC":nhc,"Nombre":name,"Edad":clean(r.get("EDAD")),"Cama":clean(r.get("CAMA")),"Fecha ingreso":ing,"Fecha asignación":asig,"Fecha alta":alt,"Días":clean(r.get("DIAS_ASIG")),"Médico":doc,"Procedencia":clean(r.get("PROCEDENCI")),"Diagnóstico ingreso":clean(r.get("DIAG_INGRE")),"Episodios paciente":counts.get(e.get("patient_id"),1),"_raw":r}
-        out.append(item)
-    out.sort(key=lambda x: (parse_date_key(x["Fecha ingreso"]), clean(x["Cama"]), clean(x["Nombre"])), reverse=True)
+        if date_from and (not d or d.date()<date_from): continue
+        if date_to and (not d or d.date()>date_to): continue
+        out.append({
+            "episode_id":e["episode_id"],"patient_id":e["patient_id"],"source_row":e.get("source_row"),
+            "NHC":nhc,"Nombre":name,"Edad":clean(effective_value(e,"EDAD")),"Cama":clean(effective_value(e,"CAMA")),
+            "Fecha ingreso":display_date(ing),"Fecha asignación":display_date(clean(effective_value(e,"FECHA_ASIG"))),"Fecha alta":display_date(clean(effective_value(e,"FECHA_ALTA"))),
+            "Días":clean(effective_value(e,"DIAS_ASIG")),"Médico":doc,"Procedencia":clean(effective_value(e,"PROCEDENCI")),
+            "Diagnóstico ingreso":clean(effective_value(e,"DIAG_INGRE")),"Episodios paciente":counts.get(e.get("patient_id"),1),"_episode":e
+        })
+    out.sort(key=lambda x: (valid_date_text(x["Fecha ingreso"]) or datetime(1900,1,1), clean(x["Cama"]), clean(x["Nombre"])), reverse=True)
     return out
+
 
 def save_bulk(ep,changes,section):
     if not changes: st.info(f"{section}: no hay cambios."); return
@@ -744,13 +775,15 @@ def create_manual_episode(data):
     existing=supabase.table("fp5_patients").select("patient_id").eq("patient_id",pid).limit(1).execute().data
     if not existing:
         supabase.table("fp5_patients").insert({"patient_id":pid,"nhc":nhc,"display_name":clean(data.get("NOMBRE")),"updated_at":now_iso()}).execute()
-    raw={f["field"]:"" for f in FIELDS}
+    raw={f["field"]:"" for f in SOURCE_FIELDS}
     for k,v in data.items():
-        if k in FIELD_BY_NAME: raw[k]=clean(v)
-    normalized,statuses=normalize_row(raw)
+        if k in {f["field"] for f in SOURCE_FIELDS}: raw[k]=clean(v)
+    active_raw={f["field"]:raw.get(f["field"],"") for f in FIELDS}
+    normalized,statuses=normalize_row(active_raw)
     eid=f"EP-MAN-{abs(source_row)}"
     supabase.table("fp5_episodes").insert({"episode_id":eid,"patient_id":pid,"source_row":source_row,"raw_data":raw,"validated_data":normalized,"field_status":statuses,"updated_at":now_iso(),"updated_by":"web"}).execute()
     _clear_data_caches(); return pid,eid
+
 
 OP_CSS="""
 <style>
@@ -802,7 +835,6 @@ if st.session_state.page in {"home","pending","current","discharged","readmit"}:
         quick_date=st.selectbox("Fecha",["Todas","Hoy","Últimos 7 días","Últimos 30 días"],key="op_date")
     with c4:
         sort_mode=st.selectbox("Orden",["Fecha ingreso","Cama","Nombre","Médico"],key="op_sort")
-    from datetime import date,timedelta
     today=date.today(); df=None; dt=None
     if quick_date=="Hoy": df=dt=today
     elif quick_date=="Últimos 7 días": df=today-timedelta(days=7); dt=today
@@ -843,9 +875,9 @@ if st.session_state.page in {"home","pending","current","discharged","readmit"}:
             q=st.form("quick_assign")
             with q:
                 a,b,c=q.columns(3)
-                bed=a.text_input("Cama",value=clean((ep.get("raw_data") or {}).get("CAMA")))
-                doc=b.text_input("Médico asignado",value=clean((ep.get("raw_data") or {}).get("CARDIOLOGO")))
-                fa=c.text_input("Fecha asignación",value=clean((ep.get("raw_data") or {}).get("FECHA_ASIG")))
+                bed=a.text_input("Cama",value=clean(effective_value(ep,"CAMA")))
+                doc=b.text_input("Médico asignado",value=clean(effective_value(ep,"CARDIOLOGO")))
+                fa=c.text_input("Fecha asignación",value=display_date(clean(effective_value(ep,"FECHA_ASIG"))))
                 if q.form_submit_button("Guardar asignación",type="primary"):
                     changes={}
                     for f,v in {"CAMA":bed,"CARDIOLOGO":doc,"FECHA_ASIG":fa}.items(): changes[f]=normalize_field(f,v)
@@ -855,8 +887,8 @@ if st.session_state.page in {"home","pending","current","discharged","readmit"}:
             st.markdown("### Dar de alta")
             q=st.form("quick_discharge_form")
             with q:
-                fa=q.text_input("Fecha de alta",value=clean((ep.get("raw_data") or {}).get("FECHA_ALTA")) or today.strftime("%d/%m/%Y"))
-                dest=q.text_input("Destino al alta",value=clean((ep.get("raw_data") or {}).get("DESTINO_AL")))
+                fa=q.text_input("Fecha de alta",value=display_date(clean(effective_value(ep,"FECHA_ALTA"))) or today.strftime("%d/%m/%Y"))
+                dest=q.text_input("Destino al alta",value=clean(effective_value(ep,"DESTINO_AL")))
                 if q.form_submit_button("Guardar alta",type="primary"):
                     save_bulk(ep,{"FECHA_ALTA":normalize_field("FECHA_ALTA",fa),"DESTINO_AL":normalize_field("DESTINO_AL",dest)},"Alta")
     else: st.info("No hay episodios que cumplan esos criterios.")
@@ -897,7 +929,7 @@ elif st.session_state.page=="episode":
     patient=get_patient(ep["patient_id"])
     r=ep.get("raw_data") or {}; name=patient.get("display_name") if patient else r.get("NOMBRE"); nhc=patient.get("nhc") if patient else r.get("NHC")
     diag=clean(r.get("DIAG_INGRE")) or clean(r.get("DIAG_ALTA"))
-    st.markdown(f'<div class="patient-banner"><div class="patient-name">{name or "Paciente"}</div><div class="patient-meta">NHC {nhc or "—"} · Ingreso {clean(r.get("FECHA_INGR")) or "—"} · Alta {clean(r.get("FECHA_ALTA")) or "—"} · Médico {clean(r.get("CARDIOLOGO")) or "—"}</div><div class="patient-diag">{diag or "Sin diagnóstico"}</div></div>',unsafe_allow_html=True)
+    st.markdown(f'<div class="patient-banner"><div class="patient-name">{name or "Paciente"}</div><div class="patient-meta">NHC {nhc or "—"} · Ingreso {display_date(clean(effective_value(ep,"FECHA_INGR"))) or "—"} · Alta {display_date(clean(effective_value(ep,"FECHA_ALTA"))) or "—"} · Médico {clean(effective_value(ep,"CARDIOLOGO")) or "—"}</div><div class="patient-diag">{diag or "Sin diagnóstico"}</div></div>',unsafe_allow_html=True)
     if st.button("← Volver a ingresos"): st.session_state.page="home"; st.rerun()
     show_missing=st.checkbox("Mostrar campos no revisados / no disponibles",value=False,key=f"show_missing_{ep['episode_id']}")
     tabs=st.tabs(["📥 Datos Iniciales del ingreso","🏁 Datos de alta","📈 Evolución","🧪 Exploraciones y tecnología","🧾 Original / IA / Auditoría"])
@@ -954,7 +986,7 @@ elif st.session_state.page=="episode":
         t=st.tabs(["Original FP5","Validado","IA","Auditoría"])
         with t[0]:
             st.caption("Copia de los valores importados de FileMaker. Solo lectura.")
-            items=[{"Campo":f["field"],"Descripción":f["label"],"Valor original":(ep.get("raw_data") or {}).get(f["field"],"")} for f in FIELDS]
+            items=[{"Campo":f["field"],"Descripción":f.get("label",f["field"]),"Valor original":(ep.get("raw_data") or {}).get(f["field"],"")} for f in SOURCE_FIELDS]
             st.dataframe(pd.DataFrame(items),use_container_width=True,hide_index=True,height=480)
         with t[1]:
             items=[{"Campo":f["field"],"Descripción":f["label"],"Valor validado":(ep.get("validated_data") or {}).get(f["field"]),"Estado":(ep.get("field_status") or {}).get(f["field"],"")} for f in FIELDS if f["field"] in (ep.get("validated_data") or {})]
@@ -982,7 +1014,7 @@ elif st.session_state.page=="new_episode":
     st.caption("Crea un nuevo episodio sin borrar ni modificar el original FP5.")
     with st.form("new_episode"):
         c1,c2,c3=st.columns(3); nhc=c1.text_input("NHC"); name=c2.text_input("Nombre"); bed=c3.text_input("Cama")
-        c1,c2,c3=st.columns(3); fin=c1.text_input("Fecha de ingreso",value=date.today().strftime("%d/%m/%Y")); fa=c2.text_input("Fecha de asignación",value=date.today().strftime("%d/%m/%Y")); doc=c3.text_input("Médico asignado")
+        c1,c2,c3=st.columns(3); fin=c1.text_input("Fecha de ingreso",value=date.today().strftime("%d/%m/%Y")); fa=c2.text_input("Fecha de asignación",value=""); doc=c3.text_input("Médico asignado",value="")
         proc=st.text_input("Procedencia"); diag=st.text_area("Diagnóstico de ingreso",height=90)
         if st.form_submit_button("Crear ingreso",type="primary"):
             pid,eid=create_manual_episode({"NHC":nhc,"NOMBRE":name,"CAMA":bed,"FECHA_INGR":fin,"FECHA_ASIG":fa,"CARDIOLOGO":doc,"PROCEDENCI":proc,"DIAG_INGRE":diag})
@@ -990,19 +1022,23 @@ elif st.session_state.page=="new_episode":
 
 elif st.session_state.page=="admin":
     st.subheader("Administración")
-    st.write(f"Diccionario: **{len(SOURCE_FIELDS)} variables de origen · {len(FIELDS)} activas**")
+    st.write(f"Diccionario: **{len(SOURCE_FIELDS)} variables de origen · {len(FIELDS)} activas** · criterio: **> {PREVALENCE_THRESHOLD:.0f}% de episodios con valor**, más fechas estructuralmente necesarias para eventos activos. Las restantes quedan solo en raw_data.")
     uploaded=st.file_uploader("CSV de FileMaker (sin cabecera)",type=["csv"])
     if uploaded:
         content=uploaded.getvalue()
         try:
             profile=profile_import(parse_fp5_csv_bytes(content)); a,b,c,d=st.columns(4)
             a.metric("Filas",profile["rows"]); b.metric("Columnas",profile["cols"]); c.metric("NHC distintos",profile["nonempty_nhc"]); d.metric("Duplicados exactos",profile["exact_duplicate_rows"])
-            st.info(f"`555`: {profile['missing_555_cells']} · vacíos: {profile['blank_cells']} · ceros: {profile['zero_cells']}")
+            st.info(f"Variables activas: {profile['active_cols']} · retiradas/archivadas: {profile['retired_cols']} · `555`: {profile['missing_555_cells']} · vacíos: {profile['blank_cells']} · ceros: {profile['zero_cells']}")
             if st.button("🔎 Auditar sin importar"): st.json(profile)
             import_mode=st.radio("Modo de carga",["Piloto · primeros 100 episodios","Carga completa · 14.297 episodios"],horizontal=True)
             is_pilot=import_mode.startswith("Piloto")
             if st.button("⬆️ Importar piloto (100)" if is_pilot else "⬆️ Importar los 14.297 episodios",type="primary"):
                 result=import_fp5(content,uploaded.name,dry_run=False,limit=100 if is_pilot else None); st.success(f"Importados: {result['episodes_created']} episodios y {result['patients_created']} pacientes."); _clear_data_caches()
         except Exception as e: st.error(f"CSV no válido: {e}")
+    st.markdown("### Variables archivadas")
+    st.caption(f"{len(RETIRED_META)} variables quedan fuera de la recogida activa por baja frecuencia (≤10%), legado/constantes o por decisión previa; sus valores originales siguen conservados en `raw_data`.")
+    if st.checkbox("Ver variables archivadas", value=False):
+        st.dataframe(pd.DataFrame(RETIRED_META), use_container_width=True, hide_index=True)
     st.markdown("### Reglas FP5")
     st.write("`555` = missing revisado · vacío = missing no revisado · el 0 se interpreta por variable · raw_data conserva el original · cada fila = un ingreso")
