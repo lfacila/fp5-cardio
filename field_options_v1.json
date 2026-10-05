@@ -1,0 +1,1796 @@
+{
+  "source_file": "FP5_14297.csv",
+  "source_rows": 14297,
+  "fields": {
+    "CAMA": [
+      {
+        "value": "i22011",
+        "count": 277
+      },
+      {
+        "value": "I22141",
+        "count": 265
+      },
+      {
+        "value": "I22122",
+        "count": 264
+      },
+      {
+        "value": "I22152",
+        "count": 255
+      },
+      {
+        "value": "I22151",
+        "count": 243
+      },
+      {
+        "value": "I22142",
+        "count": 241
+      },
+      {
+        "value": "I22131",
+        "count": 237
+      },
+      {
+        "value": "i22021",
+        "count": 237
+      },
+      {
+        "value": "i22032",
+        "count": 233
+      },
+      {
+        "value": "I22091",
+        "count": 228
+      },
+      {
+        "value": "I22132",
+        "count": 226
+      },
+      {
+        "value": "i22031",
+        "count": 225
+      },
+      {
+        "value": "i22012",
+        "count": 223
+      },
+      {
+        "value": "I22112",
+        "count": 221
+      },
+      {
+        "value": "I22072",
+        "count": 217
+      },
+      {
+        "value": "I22052",
+        "count": 216
+      },
+      {
+        "value": "I22092",
+        "count": 215
+      },
+      {
+        "value": "i22041",
+        "count": 214
+      },
+      {
+        "value": "I22062",
+        "count": 214
+      },
+      {
+        "value": "I22101",
+        "count": 213
+      },
+      {
+        "value": "I22121",
+        "count": 212
+      },
+      {
+        "value": "I22111",
+        "count": 209
+      },
+      {
+        "value": "I22042",
+        "count": 208
+      },
+      {
+        "value": "I22071",
+        "count": 204
+      },
+      {
+        "value": "i22051",
+        "count": 201
+      },
+      {
+        "value": "I22103",
+        "count": 199
+      },
+      {
+        "value": "I22102",
+        "count": 197
+      },
+      {
+        "value": "I22082",
+        "count": 195
+      },
+      {
+        "value": "i22062",
+        "count": 194
+      },
+      {
+        "value": "i22042",
+        "count": 193
+      },
+      {
+        "value": "i22052",
+        "count": 191
+      },
+      {
+        "value": "i22072",
+        "count": 188
+      },
+      {
+        "value": "I22061",
+        "count": 188
+      },
+      {
+        "value": "I22032",
+        "count": 188
+      },
+      {
+        "value": "i22022",
+        "count": 187
+      },
+      {
+        "value": "I22081",
+        "count": 187
+      },
+      {
+        "value": "i22071",
+        "count": 185
+      },
+      {
+        "value": "I22041",
+        "count": 182
+      },
+      {
+        "value": "I22051",
+        "count": 181
+      },
+      {
+        "value": "i22061",
+        "count": 176
+      },
+      {
+        "value": "I22113",
+        "count": 164
+      },
+      {
+        "value": "i22081",
+        "count": 162
+      },
+      {
+        "value": "i22122",
+        "count": 158
+      },
+      {
+        "value": "i22091",
+        "count": 155
+      },
+      {
+        "value": "i22092",
+        "count": 154
+      },
+      {
+        "value": "i22082",
+        "count": 153
+      },
+      {
+        "value": "i22131",
+        "count": 150
+      },
+      {
+        "value": "i22151",
+        "count": 143
+      },
+      {
+        "value": "i22152",
+        "count": 139
+      },
+      {
+        "value": "I22022",
+        "count": 138
+      },
+      {
+        "value": "i22142",
+        "count": 136
+      },
+      {
+        "value": "I22031",
+        "count": 136
+      },
+      {
+        "value": "i22141",
+        "count": 136
+      },
+      {
+        "value": "i22132",
+        "count": 132
+      },
+      {
+        "value": "i22112",
+        "count": 129
+      },
+      {
+        "value": "i22121",
+        "count": 124
+      },
+      {
+        "value": "i22111",
+        "count": 109
+      },
+      {
+        "value": "I22012",
+        "count": 106
+      },
+      {
+        "value": "I22021",
+        "count": 103
+      },
+      {
+        "value": "i22101",
+        "count": 85
+      },
+      {
+        "value": "I22011",
+        "count": 82
+      },
+      {
+        "value": "i22103",
+        "count": 78
+      },
+      {
+        "value": "I22104",
+        "count": 77
+      },
+      {
+        "value": "i22102",
+        "count": 74
+      },
+      {
+        "value": "i22113",
+        "count": 66
+      },
+      {
+        "value": "i22172",
+        "count": 62
+      },
+      {
+        "value": "i22171",
+        "count": 58
+      },
+      {
+        "value": "i22162",
+        "count": 58
+      },
+      {
+        "value": "i22161",
+        "count": 52
+      },
+      {
+        "value": "I23031",
+        "count": 49
+      },
+      {
+        "value": "I23042",
+        "count": 47
+      },
+      {
+        "value": "I23072",
+        "count": 45
+      },
+      {
+        "value": "I23041",
+        "count": 44
+      },
+      {
+        "value": "I23061",
+        "count": 44
+      },
+      {
+        "value": "I23011",
+        "count": 40
+      },
+      {
+        "value": "i23031",
+        "count": 40
+      },
+      {
+        "value": "I23062",
+        "count": 39
+      },
+      {
+        "value": "i23021",
+        "count": 38
+      },
+      {
+        "value": "I22114",
+        "count": 37
+      },
+      {
+        "value": "i23043",
+        "count": 37
+      },
+      {
+        "value": "i23022",
+        "count": 36
+      },
+      {
+        "value": "i23012",
+        "count": 35
+      },
+      {
+        "value": "I23052",
+        "count": 34
+      },
+      {
+        "value": "I23071",
+        "count": 34
+      },
+      {
+        "value": "I23021",
+        "count": 33
+      },
+      {
+        "value": "i23061",
+        "count": 31
+      },
+      {
+        "value": "I23043",
+        "count": 31
+      },
+      {
+        "value": "i23032",
+        "count": 31
+      },
+      {
+        "value": "I23012",
+        "count": 30
+      },
+      {
+        "value": "i23041",
+        "count": 29
+      },
+      {
+        "value": "i23071",
+        "count": 28
+      },
+      {
+        "value": "i23062",
+        "count": 27
+      },
+      {
+        "value": "I23032",
+        "count": 27
+      },
+      {
+        "value": "i23042",
+        "count": 26
+      },
+      {
+        "value": "I22162",
+        "count": 26
+      },
+      {
+        "value": "I23051",
+        "count": 25
+      },
+      {
+        "value": "i22104",
+        "count": 24
+      },
+      {
+        "value": "I23022",
+        "count": 23
+      },
+      {
+        "value": "i23011",
+        "count": 23
+      },
+      {
+        "value": "I22161",
+        "count": 22
+      }
+    ],
+    "CARDIOLOGO": [
+      {
+        "value": "Dr.FACILA",
+        "count": 2806
+      },
+      {
+        "value": "Dr. MONTAGUD",
+        "count": 2555
+      },
+      {
+        "value": "Dra.BELCHI",
+        "count": 1770
+      },
+      {
+        "value": "RESIDENTE",
+        "count": 1217
+      },
+      {
+        "value": "Dr.MELERO",
+        "count": 1092
+      },
+      {
+        "value": "Dr.RIDOCCI",
+        "count": 1056
+      },
+      {
+        "value": "Dr. Girbes",
+        "count": 529
+      },
+      {
+        "value": "Dr.NOGUERA",
+        "count": 223
+      },
+      {
+        "value": "RID-MEL",
+        "count": 211
+      },
+      {
+        "value": "RES-FAC",
+        "count": 202
+      },
+      {
+        "value": "FAC-MON",
+        "count": 187
+      },
+      {
+        "value": "Dr. Pirola",
+        "count": 134
+      },
+      {
+        "value": "Dr. Abdala",
+        "count": 97
+      },
+      {
+        "value": "Dr. Quesada Ocete",
+        "count": 82
+      },
+      {
+        "value": "Dra. Rumiz",
+        "count": 71
+      },
+      {
+        "value": "Dr.QUESADA",
+        "count": 71
+      },
+      {
+        "value": "Dra. Vidal",
+        "count": 67
+      },
+      {
+        "value": "Dr. Fabregat",
+        "count": 62
+      },
+      {
+        "value": "RES-RID",
+        "count": 58
+      },
+      {
+        "value": "Dra. Heredia",
+        "count": 57
+      },
+      {
+        "value": "Dr. Solano",
+        "count": 57
+      },
+      {
+        "value": "RES-MON",
+        "count": 51
+      },
+      {
+        "value": "Dr Moruno",
+        "count": 41
+      },
+      {
+        "value": "Dr.Cànoves",
+        "count": 37
+      },
+      {
+        "value": "MADRAZO",
+        "count": 36
+      },
+      {
+        "value": "Dra. Esteve",
+        "count": 35
+      },
+      {
+        "value": "Dra. TORMO",
+        "count": 30
+      },
+      {
+        "value": "Dr. Llopis",
+        "count": 29
+      },
+      {
+        "value": "RES-BEL",
+        "count": 28
+      },
+      {
+        "value": "Dr.PALANCA",
+        "count": 27
+      },
+      {
+        "value": "Dra. Ferrando",
+        "count": 19
+      },
+      {
+        "value": "Dra. Fernandez",
+        "count": 18
+      },
+      {
+        "value": "Dr. Jiménez",
+        "count": 17
+      },
+      {
+        "value": "Dr.BERENGUER",
+        "count": 15
+      },
+      {
+        "value": "ARRITMIAS",
+        "count": 15
+      },
+      {
+        "value": "Dra. Ferrero",
+        "count": 15
+      },
+      {
+        "value": "Dr. Bochard",
+        "count": 13
+      },
+      {
+        "value": "Dr.RESTREPO",
+        "count": 13
+      },
+      {
+        "value": "Dr Gradoli",
+        "count": 13
+      },
+      {
+        "value": "Dra. Cervero",
+        "count": 13
+      },
+      {
+        "value": "HEMODINAMICA",
+        "count": 12
+      },
+      {
+        "value": "Dra. Paya",
+        "count": 11
+      },
+      {
+        "value": "Dra.Ferrando",
+        "count": 10
+      },
+      {
+        "value": "Dr. Cárdenas",
+        "count": 10
+      },
+      {
+        "value": "RES-MEL",
+        "count": 10
+      },
+      {
+        "value": "PIR-MEL",
+        "count": 9
+      },
+      {
+        "value": "Dra. Igual",
+        "count": 9
+      },
+      {
+        "value": "Dr. Alonso",
+        "count": 8
+      },
+      {
+        "value": "Dr. Cubillos",
+        "count": 8
+      },
+      {
+        "value": "BEL-PIR",
+        "count": 7
+      },
+      {
+        "value": "HARVAT",
+        "count": 6
+      },
+      {
+        "value": "EEF",
+        "count": 6
+      },
+      {
+        "value": "RES-NOG",
+        "count": 5
+      },
+      {
+        "value": "Dr. Escribano",
+        "count": 5
+      },
+      {
+        "value": "Dr. SANMIGUEL",
+        "count": 5
+      },
+      {
+        "value": "Dr. Noguera",
+        "count": 4
+      },
+      {
+        "value": "Dr. Morell",
+        "count": 4
+      },
+      {
+        "value": "Dr. Carrion",
+        "count": 4
+      },
+      {
+        "value": "Dra. Quesada",
+        "count": 2
+      },
+      {
+        "value": "RIDOCCI",
+        "count": 2
+      },
+      {
+        "value": "BELCHI",
+        "count": 2
+      },
+      {
+        "value": "Dra Valls",
+        "count": 1
+      },
+      {
+        "value": "Dra Lucas",
+        "count": 1
+      },
+      {
+        "value": "OTRO SERVICIO",
+        "count": 1
+      },
+      {
+        "value": "FUGADO",
+        "count": 1
+      },
+      {
+        "value": "belchi",
+        "count": 1
+      },
+      {
+        "value": "GARCIA",
+        "count": 1
+      },
+      {
+        "value": "DRA. ESTEVE",
+        "count": 1
+      },
+      {
+        "value": "DR Moruno",
+        "count": 1
+      },
+      {
+        "value": "GIR-FAC",
+        "count": 1
+      },
+      {
+        "value": "Dr. Harvat",
+        "count": 1
+      },
+      {
+        "value": "MORUNO",
+        "count": 1
+      }
+    ],
+    "CARDIOLOGO1": [
+      {
+        "value": "FAC-MON",
+        "count": 2534
+      },
+      {
+        "value": "Dr.FACILA",
+        "count": 2422
+      },
+      {
+        "value": "RID-MEL",
+        "count": 2146
+      },
+      {
+        "value": "Dr. MONTAGUD",
+        "count": 2137
+      },
+      {
+        "value": "Dra.BELCHI",
+        "count": 2034
+      },
+      {
+        "value": "RES-FAC",
+        "count": 767
+      },
+      {
+        "value": "RES-RID",
+        "count": 645
+      },
+      {
+        "value": "Dr.RIDOCCI",
+        "count": 324
+      },
+      {
+        "value": "PIR-MEL",
+        "count": 302
+      },
+      {
+        "value": "Dr.NOGUERA",
+        "count": 243
+      },
+      {
+        "value": "Dr.MELERO",
+        "count": 188
+      },
+      {
+        "value": "RES-MEL",
+        "count": 148
+      },
+      {
+        "value": "BEL-PIR",
+        "count": 135
+      },
+      {
+        "value": "RESIDENTE",
+        "count": 37
+      },
+      {
+        "value": "ARRITMIAS",
+        "count": 25
+      },
+      {
+        "value": "Dra. Rumiz",
+        "count": 24
+      },
+      {
+        "value": "Dr.QUESADA",
+        "count": 21
+      },
+      {
+        "value": "RES-MON",
+        "count": 19
+      },
+      {
+        "value": "RES-BEL",
+        "count": 15
+      },
+      {
+        "value": "HEMODINAMICA",
+        "count": 11
+      },
+      {
+        "value": "Dr.RESTREPO",
+        "count": 10
+      },
+      {
+        "value": "RES-NOG",
+        "count": 9
+      },
+      {
+        "value": "HARVAT",
+        "count": 8
+      },
+      {
+        "value": "LIDIA",
+        "count": 6
+      },
+      {
+        "value": "Dra. TORMO",
+        "count": 5
+      },
+      {
+        "value": "Dr.PALANCA",
+        "count": 5
+      },
+      {
+        "value": "Dr. Harvat",
+        "count": 5
+      },
+      {
+        "value": "EEF",
+        "count": 3
+      },
+      {
+        "value": "Dr.BERENGUER",
+        "count": 3
+      },
+      {
+        "value": "Dra Serrano",
+        "count": 2
+      },
+      {
+        "value": "Dr.Cànoves",
+        "count": 2
+      },
+      {
+        "value": "Dr. Girbes",
+        "count": 2
+      },
+      {
+        "value": "OTRO SERVICIO",
+        "count": 1
+      },
+      {
+        "value": "Dr. Fabregat",
+        "count": 1
+      },
+      {
+        "value": "Dr. Jiménez",
+        "count": 1
+      },
+      {
+        "value": "Dra. Esteve",
+        "count": 1
+      },
+      {
+        "value": "Dra. Igual",
+        "count": 1
+      },
+      {
+        "value": "otro",
+        "count": 1
+      },
+      {
+        "value": "GIR-RID",
+        "count": 1
+      },
+      {
+        "value": "MORUNO",
+        "count": 1
+      }
+    ],
+    "CENTRO": [
+      {
+        "value": "CENTRO DE SALUD DE TORRENT",
+        "count": 484
+      },
+      {
+        "value": "CENTRO DE SALUD VALENCIA NOU MOLES",
+        "count": 413
+      },
+      {
+        "value": "CENTRO DE SALUD DE ALAQUAS",
+        "count": 400
+      },
+      {
+        "value": "CENTRO DE SALUD DE XIRIVELLA",
+        "count": 368
+      },
+      {
+        "value": "CENTRO DE SALUD DE TORRENT II",
+        "count": 292
+      },
+      {
+        "value": "CENTRO DE SALUD DE PAIPORTA",
+        "count": 228
+      },
+      {
+        "value": "CENTRO DE SALUD DE PICASSENT",
+        "count": 216
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA VIRGEN DE LA FUENSANTA",
+        "count": 170
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA SAN ISIDRO",
+        "count": 160
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA GUILLEM DE CASTRO",
+        "count": 147
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA NAPOLES Y SICILIA",
+        "count": 136
+      },
+      {
+        "value": "CENTRO DE SALUD DE PICANYA",
+        "count": 124
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA GIL Y MORTE",
+        "count": 116
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE XIRIVELLA BARRIO DE LA LUZ",
+        "count": 85
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE TORRENT MONTE-VEDAT",
+        "count": 67
+      },
+      {
+        "value": "CENTRO DE SALUD DE MONTSERRAT",
+        "count": 61
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR GUILLEM DE CASTRO",
+        "count": 56
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE TORRENT",
+        "count": 53
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR CONVENTO JERUSALEN",
+        "count": 39
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA PADRE JOFRE",
+        "count": 34
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE MONTROY",
+        "count": 33
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA VICENTE CLAVEL",
+        "count": 24
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE REAL DE MONTROI",
+        "count": 23
+      },
+      {
+        "value": "CENTRO DE SALUD DE ALDAIA",
+        "count": 20
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA TRINITAT",
+        "count": 14
+      },
+      {
+        "value": "CENTRO DE SALUD DE MISLATA",
+        "count": 12
+      },
+      {
+        "value": "CENTRO NO ASIGNADO",
+        "count": 11
+      },
+      {
+        "value": "CENTRO DE SALUD DE XATIVA",
+        "count": 10
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA RUZAFA",
+        "count": 9
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA FUENTE DE SAN LUIS",
+        "count": 9
+      },
+      {
+        "value": "CENTRO DE SALUD DE UTIEL",
+        "count": 9
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA CHILE",
+        "count": 8
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE MILLARES",
+        "count": 7
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE ALBUIXECH",
+        "count": 7
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA LUIS OLIAG-MONTEOLIVETE",
+        "count": 6
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA ING.J.BENLLOCH",
+        "count": 6
+      },
+      {
+        "value": "CENTRO DE SALUD DE PATERNA",
+        "count": 6
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA BENIMACLET",
+        "count": 6
+      },
+      {
+        "value": "CONSULTORIO DE REQUENA",
+        "count": 6
+      },
+      {
+        "value": "CENTRO DE SALUD DE MONCADA",
+        "count": 5
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA LUIS OLIAG",
+        "count": 5
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA REPUBLICA ARGENTINA",
+        "count": 5
+      },
+      {
+        "value": "CENTRO DE SALUD DE ONTINYENT AVDA. ALBAIDA",
+        "count": 5
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE MISLATA",
+        "count": 5
+      },
+      {
+        "value": "CENTRO DE SALUD DE CANALS",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE CULLERA",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE LLIRIA",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE AYORA",
+        "count": 4
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE SAN ANTONIO DE BENAGEBER",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE CARLET",
+        "count": 4
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE CHIVA URB. CALICANTO",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE RIBA-ROJA DE TURIA",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE MANISES",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD VALENCIA BENICALAP MIGUEL SERVET",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE SILLA",
+        "count": 4
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA TRAFALGAR",
+        "count": 4
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE RAFELGUARAF",
+        "count": 3
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE XATIVA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE QUART DE POBLET",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE SUECA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE BURJASSOT 1",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE L ELIANA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA PLAZA SEGOVIA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA SALVADOR ALLENDE",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD ALDAIA BARRIO DEL CRISTO",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA CAMPANAR",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA MALVARROSA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE ONTINYENT EL BARRANQUET",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE ALCOI / ALCOY LA BASSA",
+        "count": 3
+      },
+      {
+        "value": "CENTRO DE SALUD DE BURJASSOT 2",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA SAN MARCELINO",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE MASSANASSA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE ALZIRA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE L OLLERIA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VILLANUEVA DE CASTELLON",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD VALENCIA BENICALAP AZUCENA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE PUIG",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE CORRALES",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE ENGUERA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE CATARROJA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA ECONOMISTA GAY",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE AIELO DE MALFERIT",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE L ALCUDIA DE CRESPINS",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA SERRERIA 2",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE ONTINYENT SAN RAFAEL",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE LA POBLA LLARGA",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA VICENTE BRULL",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA SERRERIA 1",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE VALENCIA CASTELLAR",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE DOS AGUAS",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE DAIMUS",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE CHIVA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE ALCOI / ALCOY PLAÇA DE DINS",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO DE VALENCIA BILBAO",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE BENEIXIDA",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE BENIGANIM",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE BETERA",
+        "count": 2
+      },
+      {
+        "value": "CONSULTORIO AUXILIAR DE ROCAFORT",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE LA LLOSA DE RANES",
+        "count": 2
+      },
+      {
+        "value": "CENTRO DE SALUD DE LA VILA JOIOSA / VILLAJOYOSA",
+        "count": 2
+      }
+    ],
+    "CSIP": [
+      {
+        "value": "282",
+        "count": 482
+      },
+      {
+        "value": "3048",
+        "count": 413
+      },
+      {
+        "value": "271",
+        "count": 400
+      },
+      {
+        "value": "285",
+        "count": 368
+      },
+      {
+        "value": "2549",
+        "count": 292
+      },
+      {
+        "value": "279",
+        "count": 228
+      },
+      {
+        "value": "281",
+        "count": 216
+      },
+      {
+        "value": "290",
+        "count": 170
+      },
+      {
+        "value": "2595",
+        "count": 160
+      },
+      {
+        "value": "2019",
+        "count": 147
+      },
+      {
+        "value": "286",
+        "count": 136
+      },
+      {
+        "value": "280",
+        "count": 124
+      },
+      {
+        "value": "288",
+        "count": 116
+      },
+      {
+        "value": "291",
+        "count": 84
+      },
+      {
+        "value": "616",
+        "count": 68
+      },
+      {
+        "value": "277",
+        "count": 61
+      },
+      {
+        "value": "3042",
+        "count": 56
+      },
+      {
+        "value": "284",
+        "count": 55
+      },
+      {
+        "value": "3270",
+        "count": 39
+      },
+      {
+        "value": "304",
+        "count": 35
+      },
+      {
+        "value": "276",
+        "count": 33
+      },
+      {
+        "value": "306",
+        "count": 24
+      },
+      {
+        "value": "278",
+        "count": 23
+      },
+      {
+        "value": "272",
+        "count": 20
+      },
+      {
+        "value": "239",
+        "count": 14
+      },
+      {
+        "value": "233",
+        "count": 12
+      },
+      {
+        "value": "99999",
+        "count": 11
+      },
+      {
+        "value": "446",
+        "count": 10
+      },
+      {
+        "value": "303",
+        "count": 9
+      },
+      {
+        "value": "310",
+        "count": 9
+      },
+      {
+        "value": "267",
+        "count": 9
+      },
+      {
+        "value": "165",
+        "count": 8
+      },
+      {
+        "value": "275",
+        "count": 7
+      },
+      {
+        "value": "157",
+        "count": 7
+      },
+      {
+        "value": "2543",
+        "count": 6
+      },
+      {
+        "value": "307",
+        "count": 6
+      },
+      {
+        "value": "206",
+        "count": 6
+      },
+      {
+        "value": "163",
+        "count": 6
+      },
+      {
+        "value": "263",
+        "count": 6
+      },
+      {
+        "value": "205",
+        "count": 5
+      },
+      {
+        "value": "311",
+        "count": 5
+      },
+      {
+        "value": "168",
+        "count": 5
+      },
+      {
+        "value": "444",
+        "count": 5
+      },
+      {
+        "value": "2498",
+        "count": 5
+      },
+      {
+        "value": "417",
+        "count": 4
+      },
+      {
+        "value": "341",
+        "count": 4
+      },
+      {
+        "value": "194",
+        "count": 4
+      },
+      {
+        "value": "247",
+        "count": 4
+      },
+      {
+        "value": "191",
+        "count": 4
+      },
+      {
+        "value": "338",
+        "count": 4
+      },
+      {
+        "value": "2120",
+        "count": 4
+      },
+      {
+        "value": "211",
+        "count": 4
+      },
+      {
+        "value": "232",
+        "count": 4
+      },
+      {
+        "value": "308",
+        "count": 4
+      },
+      {
+        "value": "302",
+        "count": 4
+      },
+      {
+        "value": "169",
+        "count": 4
+      },
+      {
+        "value": "430",
+        "count": 3
+      },
+      {
+        "value": "636",
+        "count": 3
+      },
+      {
+        "value": "234",
+        "count": 3
+      },
+      {
+        "value": "348",
+        "count": 3
+      },
+      {
+        "value": "185",
+        "count": 3
+      },
+      {
+        "value": "190",
+        "count": 3
+      },
+      {
+        "value": "707",
+        "count": 3
+      },
+      {
+        "value": "242",
+        "count": 3
+      },
+      {
+        "value": "273",
+        "count": 3
+      },
+      {
+        "value": "2548",
+        "count": 3
+      },
+      {
+        "value": "170",
+        "count": 3
+      },
+      {
+        "value": "582",
+        "count": 3
+      },
+      {
+        "value": "456",
+        "count": 3
+      },
+      {
+        "value": "184",
+        "count": 2
+      },
+      {
+        "value": "300",
+        "count": 2
+      },
+      {
+        "value": "2974",
+        "count": 2
+      },
+      {
+        "value": "323",
+        "count": 2
+      },
+      {
+        "value": "438",
+        "count": 2
+      },
+      {
+        "value": "445",
+        "count": 2
+      },
+      {
+        "value": "241",
+        "count": 2
+      },
+      {
+        "value": "121",
+        "count": 2
+      },
+      {
+        "value": "699",
+        "count": 2
+      },
+      {
+        "value": "425",
+        "count": 2
+      },
+      {
+        "value": "299",
+        "count": 2
+      },
+      {
+        "value": "238",
+        "count": 2
+      },
+      {
+        "value": "442",
+        "count": 2
+      },
+      {
+        "value": "410",
+        "count": 2
+      },
+      {
+        "value": "671",
+        "count": 2
+      },
+      {
+        "value": "441",
+        "count": 2
+      },
+      {
+        "value": "431",
+        "count": 2
+      },
+      {
+        "value": "171",
+        "count": 2
+      },
+      {
+        "value": "670",
+        "count": 2
+      },
+      {
+        "value": "314",
+        "count": 2
+      },
+      {
+        "value": "274",
+        "count": 2
+      },
+      {
+        "value": "354",
+        "count": 2
+      },
+      {
+        "value": "231",
+        "count": 2
+      },
+      {
+        "value": "454",
+        "count": 2
+      },
+      {
+        "value": "240",
+        "count": 2
+      },
+      {
+        "value": "648",
+        "count": 2
+      },
+      {
+        "value": "413",
+        "count": 2
+      },
+      {
+        "value": "181",
+        "count": 2
+      },
+      {
+        "value": "193",
+        "count": 2
+      },
+      {
+        "value": "452",
+        "count": 2
+      },
+      {
+        "value": "481",
+        "count": 2
+      }
+    ],
+    "DESTINO_AL": [
+      {
+        "value": "DOMICILIO",
+        "count": 11877
+      },
+      {
+        "value": "CIRUGIA CARDIACA",
+        "count": 528
+      },
+      {
+        "value": "EXITUS",
+        "count": 295
+      },
+      {
+        "value": "OTRO SERVICIO",
+        "count": 228
+      },
+      {
+        "value": "UNIDAD CORONARIA",
+        "count": 185
+      },
+      {
+        "value": "TRASLADO OTRO HOSPITAL",
+        "count": 117
+      },
+      {
+        "value": "VOLUNTARIA",
+        "count": 16
+      },
+      {
+        "value": "FUGADO",
+        "count": 10
+      },
+      {
+        "value": "domicilio",
+        "count": 2
+      }
+    ],
+    "GRUPO_DX": [
+      {
+        "value": "CARDIOPATÍA ISQUÉMICA",
+        "count": 5976
+      },
+      {
+        "value": "INSUFICIENCIA CARDIACA",
+        "count": 3779
+      },
+      {
+        "value": "ARRITMIAS",
+        "count": 1701
+      },
+      {
+        "value": "SINCOPE",
+        "count": 463
+      },
+      {
+        "value": "DOLOR TORÁCICO",
+        "count": 387
+      },
+      {
+        "value": "VALVULOPATÍA",
+        "count": 229
+      },
+      {
+        "value": "NO CARDIOLÓGICO",
+        "count": 180
+      },
+      {
+        "value": "DERRAME PERICARDICO",
+        "count": 161
+      },
+      {
+        "value": "ENDOCARDITIS",
+        "count": 156
+      },
+      {
+        "value": "MIOCARDITIS",
+        "count": 132
+      },
+      {
+        "value": "PERICARDITIS",
+        "count": 81
+      },
+      {
+        "value": "OTROS",
+        "count": 47
+      },
+      {
+        "value": "takotsubo",
+        "count": 1
+      }
+    ],
+    "PROCEDENCI": [
+      {
+        "value": "Urgencias",
+        "count": 7884
+      },
+      {
+        "value": "Unidad Coronaria",
+        "count": 5719
+      },
+      {
+        "value": "Otro Servicio",
+        "count": 334
+      },
+      {
+        "value": "Traslado otro hospital",
+        "count": 94
+      },
+      {
+        "value": "consultas externas",
+        "count": 75
+      },
+      {
+        "value": "Programado",
+        "count": 40
+      },
+      {
+        "value": "Domicilio",
+        "count": 11
+      },
+      {
+        "value": "hemodinamica",
+        "count": 3
+      }
+    ]
+  },
+  "rules": {
+    "purpose": "Frecuencia real del CSV para selectores de campos categóricos repetidos.",
+    "order": "descendente por frecuencia",
+    "scope": "active categorical text fields; clinical free text and identifiers excluded",
+    "max_options": 100
+  }
+}
